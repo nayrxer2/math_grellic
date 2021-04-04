@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+:root {
+    --primary-blue:  #374785;
+}
+
+.logo-brand{
+    width: 2.25rem;
+}
+nav a.navbar-brand {
+    font-family: 'Squada One';
+    color: var(--primary-blue) !important;
+}
+nav a.nav-link {
+   letter-spacing: 0.0375rem;
+}
+
+.navbar-nav > li > a {
+    color: var(--primary-blue) !important;
+}
