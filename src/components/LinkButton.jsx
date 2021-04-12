@@ -9,8 +9,8 @@ const BACKGROUNDS = [
 
 //-----array of sizes
 const SIZES = [
-    "small",
-    "large",
+    "small-lnkbtn",
+    "large-lnkbtn",
 ];
 
 export const LinkButton = ({
@@ -35,7 +35,7 @@ export const LinkButton = ({
         // </div>
 
         <div className={`link-btn ${checkButtonBg} ${checkButtonSize}`}>
-          <a className="" href="#">{children}</a>
+          <a className="mr-4" href="#">{children}</a>
         </div>
     )
 };

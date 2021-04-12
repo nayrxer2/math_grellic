@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../../styles/navbar.css'
 import logo from '../../images/logo-brand.png' 
 import {LinkButton} from '../LinkButton'
+import {Button} from '../Button'
 import { NavItems } from './NavItems'
 //from fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -35,7 +36,7 @@ window.addEventListener('scroll', changeBackground)
           )
         })}
           <li className="nav-item active">
-             <button type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</button>
+            <Button>Log In</Button>
           </li>
       </ul>
     </div>

@@ -1,3 +1,14 @@
+:root{
+    --primary: #A8D0E6;
+    --secondary: #374785;
+    --accent: #F76C6C;
+    --accent-dark: #E45B5B;
+    --accent-50: #F9CDCD;
+    --primary-25:#EBF4F9;
+    --primary-50: #D8EAF4;
+    --bg-dark: #0F1F38;
+  }
+
 .bg-logo {
     background-image: url('../images/bg.png');
     background-repeat: no-repeat;

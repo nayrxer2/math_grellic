@@ -4,7 +4,7 @@ import logo from '../../images/logo-brand.png'
 
 const LandingPageSplash = () => {
     return (
-        <div className="container-fluid justify-content-around col-9">
+        <div className="container justify-content-around col-9">
             <div className="col-6">
                 <img className="lp-logo-brand" src={logo} />
                 <h1 className="main-info headline-h1"> MATH GRELLIC</h1>

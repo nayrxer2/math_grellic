@@ -11,7 +11,7 @@ a{
     display: block;
     font-family: "Manrope", sans-serif;
     font-style: normal;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
     text-decoration: none;
     font-weight: 800;
     margin: 0 10px;
@@ -39,6 +39,10 @@ a:before {
     color: var(--secondary) !important;
 }
 
+.dark a:hover{
+    text-decoration: none;
+    color: var(--secondary) !important;
+}
 .dark a:after {
     position: absolute;
     bottom: 0;
@@ -65,7 +69,8 @@ a:before {
 }
 
 .light a:hover{
-    color: var(--primary) !important;
+    text-decoration: none;
+    color: var(--primary-50) !important;
 }
 
 .light a:after {
@@ -78,6 +83,7 @@ a:before {
     content: '.';
     color: transparent;
     height: 6px;
+    text-decoration: none;
     background: var(--primary);
 }
 
@@ -89,12 +95,12 @@ a:before {
     background: var(--primary-25);
 }
 
-.small{
-    font-size: 16px;
+.small-lnkbtn{
+    font-size: 14px;
     line-height: 20px;
 }
 
-.large{
+.large-lnkbtn{
     font-size: 18px;
     line-height: 22px;
 }

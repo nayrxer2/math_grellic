@@ -10,8 +10,8 @@ const STYLES = [
 
 //-----array of sizes
 const SIZES = [
-    "small",
-    "large",
+    "small-btn",
+    "large-btn",
 ];
 
 export const Button = ({
@@ -31,7 +31,7 @@ export const Button = ({
 
     return(
         <div>
-            <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
+            <button className={`button ${checkButtonStyle} ${checkButtonSize}`} 
             onClick={onClick}
             type={type}
             >   

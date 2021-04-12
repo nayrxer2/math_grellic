@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(16px);
 }
 
@@ -16,13 +16,11 @@ nav a.navbar-brand {
     font-family: 'Squada One';
     color: var(--primary-blue) !important;
 }
-/* nav a.nav-link {
-   letter-spacing: 0.0375rem;
-}
 
-.navbar-nav > li > a {
-    color: var(--primary-blue) !important;
-} */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
 
 .btn-nav {
     margin: 0 !important;
