@@ -2,7 +2,8 @@
     --primary-blue:  #374785;
 }
 .container-fluid {
-    margin-top: 10% !important;
+    /* margin-top: 10% !important; */
+    padding-top: 10%;
 }
 
 h1.main-info{
@@ -10,15 +11,12 @@ h1.main-info{
     font-size: 4rem;
     color: var(--primary-blue);
     margin-left:  0 !important;
+    letter-spacing: 0.08em;
 }
 p.main-info {
     color: var(--primary-blue);
 }
-.btn-enrol-here {
-    background-color: #F76C6C !important;
-    border-color:  #F76C6C !important;
-    border-radius: 0%;
-}
+
 .lp-logo-brand{
     width: 4.25rem;
 }
