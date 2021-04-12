@@ -1,0 +1,24 @@
+:root {
+    --primary-blue:  #374785;
+}
+.container-fluid {
+    margin-top: 10% !important;
+}
+
+h1.main-info{
+    font-family: 'Squada One';
+    font-size: 4rem;
+    color: var(--primary-blue);
+    margin-left:  0 !important;
+}
+p.main-info {
+    color: var(--primary-blue);
+}
+.btn-enrol-here {
+    background-color: #F76C6C !important;
+    border-color:  #F76C6C !important;
+    border-radius: 0%;
+}
+.lp-logo-brand{
+    width: 4.25rem;
+}

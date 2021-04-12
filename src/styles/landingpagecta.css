@@ -1,0 +1,13 @@
+.cta-m {
+    margin-top: 25rem !important;
+}
+
+.card-body {
+    width: 19rem;
+}
+.grid-item-box  {
+    align-self: center !important;
+    text-align: center !important; 
+    box-shadow: 0px 5px 8px 5px whitesmoke !important;
+    /* height: 300px; */
+}

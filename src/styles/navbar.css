@@ -18,3 +18,8 @@ nav a.nav-link {
 .navbar-nav > li > a {
     color: var(--primary-blue) !important;
 }
+
+.btn-nav {
+    margin: 0 !important;
+}
+

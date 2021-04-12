@@ -1,0 +1,22 @@
+.card-body {
+    width: 19rem;
+}
+.grid-item-box  {
+    align-self: center !important;
+    text-align: center !important; 
+    box-shadow: 0px 5px 8px 5px whitesmoke !important;
+    /* height: 300px; */
+}
+
+.icon-style{ 
+    /* display: block; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    padding:3.125rem 3.125rem 3.125rem 3.125rem;
+    align-self: center;
+}
+
+.card-container {
+    margin-top: 0% !important;
+}

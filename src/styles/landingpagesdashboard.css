@@ -1,0 +1,19 @@
+.lines-top {
+    margin-top: 10rem;
+    margin-left: 0% !important;
+}
+
+.dashboard-img {
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+    padding-left: 0 !important;
+    justify-content: left;
+    z-index: -999;
+}
+
+.img-fluid {
+    z-index: -999;
+}
+.col-content {
+    z-index: 999;
+}

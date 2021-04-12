@@ -1,0 +1,17 @@
+.bg-logo {
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    /* width: 100%; */
+    height: 90vh;
+}
+
+.cta-logo {
+    background-image: url('../images/CTA.png');
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 50vh;
+    margin-top: -13rem;
+}
+
