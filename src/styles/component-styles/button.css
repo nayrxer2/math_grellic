@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.mr-8{
+    margin-right: 8px;
+}
+
+.btn {
+    display: flex;
+    align-items:center;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-feature-settings: 'liga' off;
+    border-radius: 8px;
+    border: 2px solid;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+    margin: 0px 12px;
+}
+
+
+
+.btn:active{
+    filter:none;
+    background: var(--accent-50);
+    border-color: var(--accent-50);
+    color: var(--accent);
+}
+
+/* Button Colors and Styles */
+
+.primary{
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    filter: drop-shadow(0px 4px 12px rgba(247, 108, 108, 0.50));
+}
+
+.primary:hover{
+    filter: none;
+    background: var(--accent-dark);
+    color: white;
+    border-color: var(--accent-dark);
+}
+
+.secondary{
+    background: transparent;
+    color: var(--accent);
+    filter: none;
+
+    border: 2px solid #F76C6C;
+    box-sizing: border-box;
+}
+
+.secondary:hover{
+    filter: none;
+    background: var(--accent-dark);
+    color: white;
+    border-color: var(--accent-dark);
+}
+
+.tertiary{
+    background: transparent;
+    color: var(--accent);
+    filter: none;
+    border-color: transparent;
+}
+
+.tertiary:hover{ 
+    filter: drop-shadow(0px 5px 3px rgba(247, 108, 108, 0.5));
+}
+
+
+/* Button Sizes */
+
+.small{
+    padding: 8px 24px;
+    font-size: 14px;
+}
+
+.large{
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+ 

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.link-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+a{
+    display: block;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 0 10px;
+
+}
+
+a,
+a:after,
+a:before {
+  transition: all .3s;
+}
+
+.link-btn a{
+    position: relative;
+}
+
+.link-btn a:hover:after {
+    width: 100%;
+}
+
+
+/* Button Colors and Styles */
+
+.dark a{
+    color: var(--secondary) !important;
+}
+
+.dark a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    height: 6px;
+    background: var(--secondary);
+}
+
+.dark a:active{
+    color: var(--primary ) !important;
+}
+
+.dark a:active:after {
+    background: var(--primary);
+}
+
+.light a{
+    color: var(--primary-25) !important;
+}
+
+.light a:hover{
+    color: var(--primary) !important;
+}
+
+.light a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    height: 6px;
+    background: var(--primary);
+}
+
+.light a:active{
+    color: var(--primary-25) !important;
+}
+
+.light a:active:after {
+    background: var(--primary-25);
+}
+
+.small{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.large{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
