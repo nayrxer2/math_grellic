@@ -13,8 +13,8 @@ export default function LandingPageSectionFeature() {
               <div className="border rounded grid-item-box border-light col-sm-auto col-xs-auto">
                 <div className="card-item">
                   <img className="icon-style" src={iconboard}/>
-                  <h4 className="card-title">User Friendly</h4>
-                  <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                  <h4 className="card-title subheading-bold">User Friendly</h4>
+                  <p className="lead-2 text-med">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
                 </div>
               </div>
           </div>
@@ -22,8 +22,8 @@ export default function LandingPageSectionFeature() {
             <div className="border rounded grid-item-box border-light card col-sm-auto col-xs-auto">
               <div className="card-item">
                 <img className="icon-style" src={iconscroll}/>
-                <h4 className="card-title">User Friendly</h4>
-                <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                <h4 className="card-title subheading-bold">User Friendly</h4>
+                <p className="lead-2 text-med">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
               </div>
             </div>
           </div>
@@ -31,8 +31,8 @@ export default function LandingPageSectionFeature() {
             <div className="border rounded grid-item-box border-light card col-sm-auto col-xs-auto">
               <div className="card-item">
                 <img className="icon-style" src={iconstack}/>
-                <h4 className="card-title">User Friendly</h4>
-                <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                <h4 className="card-title subheading-bold">User Friendly</h4>
+                <p className="lead-2 text-med">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
               </div>
             </div>
           </div>

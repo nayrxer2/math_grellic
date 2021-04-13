@@ -127,6 +127,55 @@ body{
     line-height: 1.5rem;
 }
 
+.label-large{
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.label-med{
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.03em;
+}
+
+.label-small{
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.button-text{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: capitalize;
+}
+
+.button-caps{
+    font-weight: 800;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.button-caps-large{
+    font-weight: 800;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.button-text-large{
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.02em;
+}
+
 .bg-logo {
     background-image: url('../images/bg.png');
     background-repeat: no-repeat;
