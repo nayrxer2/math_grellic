@@ -8,11 +8,15 @@
     margin-bottom: -4rem;
     padding-left: 0 !important;
     justify-content: left;
-    z-index: -999;
+    z-index: 99;
 }
 
 .img-fluid {
-    z-index: -999;
+    z-index: 999;
+}
+
+.lines-bottom{
+    z-index: 90;
 }
 .col-content {
     right: 80px;
