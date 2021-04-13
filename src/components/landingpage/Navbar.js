@@ -32,7 +32,7 @@ window.addEventListener('scroll', changeBackground)
       <ul className="navbar-nav ml-auto">
         { NavItems.map((item) => {
           return (
-              <LinkButton>{ item.title }</LinkButton>
+              <LinkButton buttonBg="light">{ item.title }</LinkButton>
           )
         })}
           <li className="nav-item active">

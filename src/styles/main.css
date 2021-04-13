@@ -1,13 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+body{
+    font-family: "Manrope", sans-serif;
+}
 :root{
     --primary: #A8D0E6;
     --secondary: #374785;
     --accent: #F76C6C;
+
+    --text-white:#fff;
+    --text-high:#1E3449;
+    --text-med:#707F8E;
+    --text-accent:#A4AEB7;
+    --text-light:#CFD4D9;
+
     --accent-dark: #E45B5B;
     --accent-50: #F9CDCD;
+
     --primary-25:#EBF4F9;
     --primary-50: #D8EAF4;
+
+    --bg-light: #fff;
     --bg-dark: #0F1F38;
-  }
+    --bg-gray: #F0F2F3;
+}
+
+/***** Color Styles *****/
+
+/* White Text */
+.text-white{ 
+    color: #fff;
+}
+
+/* High Emphasis Text */
+.text-high{
+    color: var(--text-high);
+}
+
+/* Medium Emphasis Text */
+.text-med{
+    color: var(--text-med);
+}
+
+/* Accent Text */
+.text-accent{
+    color: var(--accent);
+}
+
+/* Light Text */
+.text-light{
+    color: var(--text-light);
+}
+
+/***** Text Styles *****/
+.h1-heading{
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 6rem;
+
+}
+
+.h2-heading{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.h3-heading{
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.h4-heading{
+    font-weight: 800;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+}
+
+.h5-heading{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.h6-heading{
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.subheading-bold{
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem
+}
+
+.subheading{
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.02em;
+}
+
+.lead-1{
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.lead-2{
+    font-weight: 500;
+    font-size: 	0.875rem;
+    line-height: 1.5rem;
+}
+
+.body-1{
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: 0.03em;
+}
+
+.body-2{
+    font-weight: normal;
+    font-size: 	0.875rem;
+    line-height: 1.5rem;
+}
 
 .bg-logo {
     background-image: url('../images/bg.png');
@@ -15,7 +133,7 @@
     background-size: contain;
     background-position-x: right;
     /* width: 100%; */
-    height: 90vh;
+    height: 95vh;
 }
 
 .cta-logo {

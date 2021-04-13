@@ -65,7 +65,11 @@ a:before {
 }
 
 .light a{
-    color: var(--primary-25) !important;
+    color: var(--text-white) !important;
+}
+
+.link-shadow{
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 
 .light a:hover{
@@ -88,11 +92,11 @@ a:before {
 }
 
 .light a:active{
-    color: var(--primary-25) !important;
+    color: var(--text-white) !important;
 }
 
 .light a:active:after {
-    background: var(--primary-25);
+    background: var(--text-white);
 }
 
 .small-lnkbtn{
