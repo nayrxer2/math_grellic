@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import '../../styles/navbar.css'
 import logo from '../../images/logo-brand.png' 
+import {LinkButton} from '../LinkButton'
+import {Button} from '../Button'
 import { NavItems } from './NavItems'
 //from fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -19,8 +21,8 @@ const Navbar = () => {
 window.addEventListener('scroll', changeBackground)
 
   return (
-    <nav className='navbar active navbar-expand-lg navbar-light bg-light active'>
-    <a className="navbar-brand" href="#"><img className="logo-brand" src={logo} /> MATH GRELLIC</a>
+    <nav className='navbar active navbar-expand-lg fixed-top navbar-light active'>
+    <a className="navbar-brand" href="#"><img className="logo-brand mr-3" src={logo} /> MATH GRELLIC</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       {/* <span className="navbar-toggler-icon"></span> */}
       <FontAwesomeIcon icon={faBars} style={{color:"#374785"}}/>
@@ -30,13 +32,11 @@ window.addEventListener('scroll', changeBackground)
       <ul className="navbar-nav ml-auto">
         { NavItems.map((item) => {
           return (
-            <li className="nav-item active">
-              <a className="nav-link">{ item.title }</a>
-            </li>
+              <LinkButton buttonBg="light">{ item.title }</LinkButton>
           )
         })}
           <li className="nav-item active">
-             <button type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</button>
+            <Button>Log In</Button>
           </li>
       </ul>
     </div>
