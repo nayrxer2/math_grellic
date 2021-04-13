@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import '../../styles/navbar.css'
+import '../../styles/login.css'
 import logo from '../../images/logo-brand.png' 
 import { NavItems } from './NavItems'
 //from fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import Modal from 'react-modal'
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false) 
@@ -16,6 +18,7 @@ const Navbar = () => {
         setNavbar(false)
     }
 }
+  const [modalIsOpen, setModalIsOpen] = useState(false)
 window.addEventListener('scroll', changeBackground)
 
   return (
@@ -36,7 +39,14 @@ window.addEventListener('scroll', changeBackground)
           )
         })}
           <li className="nav-item active">
-             <button type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</button>
+             <button onClick={() => setModalIsOpen(true)} type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</button>
+             <Modal isOpen={modalIsOpen} className="login-modal-body">
+                <img className="brand-logo" src={logo} /> <button onClick={() => setModalIsOpen(false)} class="bi bi-x login-modal-close">CLOSE</button>
+                <div>
+                  <button onClick={() => setModalIsOpen(false)}>Close</button>
+                </div>
+               
+             </Modal>
           </li>
       </ul>
     </div>
