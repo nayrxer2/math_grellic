@@ -35,7 +35,7 @@ export const LinkButton = ({
         // </div>
 
         <div className={`link-btn ${checkButtonBg} ${checkButtonSize}`}>
-          <a className="link-shadow mr-3" href="#">{children}</a>
+          <a className="mr-3" href="#">{children}</a>
         </div>
     )
 };
