@@ -1,5 +1,5 @@
-.cta-m {
-    margin-top: 25rem !important;
+/* .cta-m {
+    margin-top: 10rem !important;
 }
 
 .card-body {
@@ -9,5 +9,9 @@
     align-self: center !important;
     text-align: center !important; 
     box-shadow: 0px 5px 8px 5px whitesmoke !important;
-    /* height: 300px; */
+} */
+.h2-margin {
+   padding-left: 10% !important;
+   padding-top: 5% !important;
+   padding-bottom: 4% !important;
 }

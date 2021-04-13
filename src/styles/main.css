@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 body{
     font-family: "Manrope", sans-serif;
+    width: 100%;
 }
 :root{
     --primary: #A8D0E6;
@@ -176,7 +177,7 @@ body{
     letter-spacing: 0.02em;
 }
 
-.bg-logo {
+.bg-splash {
     background-image: url('../images/bg.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -184,12 +185,17 @@ body{
     /* width: 100%; */
     max-height: 90vh;
 }
+.bg-cta {
+    max-height: 90vh;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background: url('../images/cta-bg.png') no-repeat;
+}
 
-.cta-logo {
+/* .cta-logo {
     background-image: url('../images/CTA.png');
     background-repeat: no-repeat !important;
     background-size: cover;
-    height: 50vh;
-    margin-top: -13rem;
-}
-
+    height: 130vh;
+    margin-top: -1rem;
+} */

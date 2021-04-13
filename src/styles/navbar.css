@@ -5,7 +5,6 @@
 }
 
 .navbar{
-    /* background: transparent; */
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(16px);
 }
@@ -26,4 +25,6 @@ nav a.navbar-brand {
 .btn-nav {
     margin: 0 !important;
 }
-
+.active.navbar-expand-lg{
+    background: transparent !important;
+}
