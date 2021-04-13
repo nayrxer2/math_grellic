@@ -1,18 +1,25 @@
 .login-modal-body {
     width: 40%;
-    height: 40%;
-    background-color: red;
+    height: 45%;
+    background-color: black;
     margin: auto;
     margin-top: 15%;   
     border-radius: 10px;
 }
 
 .brand-logo {
-    margin-top: 3%;
-    margin-left: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
     width: 2.25rem;
+    float: left;
 }
 
 .login-modal-close {
-    border: none;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10px;
 }
+
+.modal-backdrop {
+    background-color: red;
+  }
