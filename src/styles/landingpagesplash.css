@@ -5,7 +5,9 @@
     /* margin-top: 10% !important; */
     padding-top: 10%;
 }
-
+.main-content{
+    padding-left: 10%;
+}
 h1.main-info{
     font-family: 'Squada One';
     font-size: 4rem;
@@ -14,9 +16,12 @@ h1.main-info{
     letter-spacing: 0.08em;
 }
 p.main-info {
+    margin-bottom: 40px;
     color: var(--primary-blue);
+    width: 40%;
 }
 
 .lp-logo-brand{
-    width: 4.25rem;
+    width: 3.5rem;
+    margin-bottom:16px;
 }
