@@ -5,7 +5,7 @@ import { Button } from '../Button'
 
 const LandingPageSplash = () => {
     return (
-        <div className="container-fluid justify-content-around col-12">
+        <div className="container-fluid justify-content-around">
             <div className="main-content">
                 <img className="lp-logo-brand" src={logo} />
                 <h1 className="main-info headline-h1"> MATH GRELLIC</h1>
