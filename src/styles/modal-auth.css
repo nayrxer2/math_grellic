@@ -1,4 +1,4 @@
-.modal-auth-wrapper {
+.modal-selection-wrapper {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -6,7 +6,7 @@
     right: 0;
 }
   
-.modal-auth-backdrop {
+.modal-selection-backdrop {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -16,12 +16,12 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
   
-.modal-auth-box {
+.modal-selection-box {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 60%;
+    max-height: 90vh;
     width: 50%;
     overflow: auto;
     background-color: white;
@@ -37,7 +37,7 @@
     float: left;
 }
 
-.modal-auth-close {
+.modal-selection-close {
     float: right;
 }
 
@@ -52,4 +52,47 @@
 
 .selection-img {
     border-radius: 25px;
+}
+
+.modal-auth-footer {
+    margin-bottom: 80px;
+}
+
+.modal-login-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    width: 55%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-user-label {
+    color: var(--accent);
+}
+
+.login-user {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.login-submit {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bg-login {
+    background-image: url('../images/login-bg.png');
+    background-repeat: no-repeat;
+    background-size: 55% 85%;
+    background-position-x: right;
+    background-position-y: bottom;
+    /* width: 100%; */
+    max-height: 90vh;
 }
