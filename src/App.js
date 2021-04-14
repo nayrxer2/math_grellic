@@ -1,7 +1,7 @@
 import Navbar from './components/landingpage/Navbar'
 import LandingPageSplash from './components/landingpage/LandingPageSplash'
 import LandingPageSectionFeature from './components/landingpage/LandingPageSectionFeature'
-import LandingPageDashboard from './components/landingpage/LandingPageDashboard'
+import LandingPageDashboard from './components/landingpage/LandingPageDashboard_excluded'
 import LandingPageStudentBenefits from './components/landingpage/LandingPageStudentBenefits'
 import LandingPageCTA from './components/landingpage/LandingPageCTA'
 import LandingSectionTeacherBenefits from './components/landingpage/LandingSectionTeacherBenefits'
@@ -15,7 +15,6 @@ function App() {
       <Navbar />
       <LandingPageSplash />
       <LandingPageSectionFeature />
-      <LandingPageDashboard />
       <LandingPageStudentBenefits />
       <LandingSectionTeacherBenefits />
       <LandingPageCTA />

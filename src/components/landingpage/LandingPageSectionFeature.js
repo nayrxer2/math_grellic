@@ -9,7 +9,7 @@ export default function LandingPageSectionFeature() {
         <div id="section-feature" className="container-fluid">
         <div className="h2-heading text-high mb-4">WHY CHOOSE <span className="text-accent">MATH GRELLIC?</span></div> 
         <div className="row card-container">
-          <div className="card-body">
+          <div className="card-body col-4">
               <div className="border rounded grid-item-box border-light col-sm-auto col-xs-auto">
                 <div className="card-item">
                   <img className="icon-style" src={iconboard}/>
@@ -18,7 +18,7 @@ export default function LandingPageSectionFeature() {
                 </div>
               </div>
           </div>
-          <div className="card-body">
+          <div className="card-body col-4">
             <div className="border rounded grid-item-box border-light card col-sm-auto col-xs-auto">
               <div className="card-item">
                 <img className="icon-style" src={iconscroll}/>
@@ -27,7 +27,7 @@ export default function LandingPageSectionFeature() {
               </div>
             </div>
           </div>
-          <div className="card-body">
+          <div className="card-body col-4">
             <div className="border rounded grid-item-box border-light card col-sm-auto col-xs-auto">
               <div className="card-item">
                 <img className="icon-style" src={iconstack}/>
