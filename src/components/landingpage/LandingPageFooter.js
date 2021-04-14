@@ -9,7 +9,7 @@ export default function LandingPageFooter() {
             <img className="logo-brand" src={logo} alt=""/>
             <div className="navbar-brand">MATH GRELLIC</div>
           </div>
-          <div className="col body-2 ftr-fnt">© 2021 Math Grellic. All rights reserved</div>
+          <div className="col body-2">© 2021 Math Grellic. All rights reserved</div>
         </div>
     )
 }
