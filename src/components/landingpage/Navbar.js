@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import '../../styles/navbar.css'
-import '../../styles/login.css'
 import logo from '../../images/logo-brand.png' 
+import imgTeacher from '../../images/teacher-img.png' 
+import imgStudent from '../../images/student-img.png' 
 import {LinkButton} from '../LinkButton'
 import {Button} from '../Button'
 import { NavItems } from './NavItems'
 //from fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-import Modal from 'react-modal'
+import Modal from '../modals/modal-auth'
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false) 
@@ -20,7 +21,12 @@ const Navbar = () => {
         setNavbar(false)
     }
 }
-const [modalIsOpen, setModalIsOpen] = useState(false)
+
+const modalRef = React.useRef()
+const openModal = () => {
+  modalRef.current.openModal()
+}
+
 window.addEventListener('scroll', changeBackground)
 
   return (
@@ -39,19 +45,8 @@ window.addEventListener('scroll', changeBackground)
           )
         })}
           <li className="nav-item active">
-             <Button onClick={() => setModalIsOpen(true)} type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</Button>
-             <Modal isOpen={modalIsOpen} className="login-modal-body">
-                <img className="brand-logo" src={logo} />
-                <div className="login-modal-close">
-                  <Button onClick={() => setModalIsOpen(false)} 
-                  buttonStyle="tertiary" 
-                  >
-                    <i class="bi bi-x"></i>
-                    Close
-                  </Button>
-                </div>
-                              
-             </Modal>
+              <Button onClick={openModal} type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</Button>
+              <Modal className="modal-dialog-scrollable" ref={modalRef}/>
           </li>
       </ul>
     </div>

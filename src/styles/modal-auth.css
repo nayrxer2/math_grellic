@@ -1,0 +1,55 @@
+.modal-auth-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  
+.modal-auth-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+  
+.modal-auth-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 60%;
+    width: 50%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.brand-logo {
+    margin-left: 2%;
+    width: 2.25rem;
+    float: left;
+}
+
+.modal-auth-close {
+    float: right;
+}
+
+.selection-header {
+    margin-top: 100px;
+}
+
+.selection-label {
+    margin-top: -25px;
+    color: var(--text-high);
+}
+
+.selection-img {
+    border-radius: 25px;
+}
