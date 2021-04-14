@@ -6,11 +6,15 @@
 .navbar{
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(16px);
+    padding: 1rem 3rem !important;
 }
-
 .logo-brand{
     margin-right: 1rem;
     width: 2rem;
+}
+.inactive-logo-brand{
+    transition: 0.3s;
+    width: 0;
 }
 .navbar-brand {
     font-family: 'Squada One';
@@ -18,15 +22,22 @@
     line-height: 21px;
     letter-spacing: 0.08em; 
 }
-
+.active-navbar-brand {
+    font-family: 'Squada One';
+    color: transparent;
+    letter-spacing: -0.5rem; 
+}
 .navbar-nav {
     display: flex;
     align-items: center;
 }
-
 .btn-nav {
     margin: 0 !important;
 }
-.active.navbar-expand-lg{
-    background: transparent !important;
+.inactive-nav{
+    position: fixed;
+    backdrop-filter: none;
+    background: transparent;
 }
+
+
