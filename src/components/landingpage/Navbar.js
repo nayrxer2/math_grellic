@@ -25,7 +25,7 @@ window.addEventListener('scroll', changeBackground)
 
   return (
     <nav className={navbar ? 'navbar navbar-expand-lg fixed-top navbar-light' : 'navbar fixed-top navbar-expand-lg navbar-light active'}>
-    <a className="navbar-brand" href="#"><img className="logo-brand mr-3" src={logo} /> MATH GRELLIC</a>
+    <a className="navbar-brand txt-secondary" href="#"><img className="logo-brand" src={logo} /> MATH GRELLIC</a>
      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       {/* <span className="navbar-toggler-icon"></span> */}
       <FontAwesomeIcon icon={faBars} style={{color:"#374785"}}/>

@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 
-:root {
-    --primary-blue:  #374785;
+.txt-secondary {
+    color: var(--secondary) !important;
 }
-
 .navbar{
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(16px);
 }
 
 .logo-brand{
+    margin-right: 1rem;
     width: 2rem;
 }
-nav a.navbar-brand {
+.navbar-brand {
     font-family: 'Squada One';
-    color: var(--primary-blue) !important;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.08em; 
 }
 
 .navbar-nav {

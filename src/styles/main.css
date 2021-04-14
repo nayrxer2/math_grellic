@@ -8,19 +8,20 @@ body{
     --secondary: #374785;
     --accent: #F76C6C;
 
-    --text-white:#fff;
+    --text-white:#FFF;
     --text-high:#1E3449;
     --text-med:#707F8E;
     --text-accent:#A4AEB7;
     --text-light:#CFD4D9;
 
+    --secondary-dark: #1D284F;
     --accent-dark: #E45B5B;
     --accent-50: #F9CDCD;
 
     --primary-25:#EBF4F9;
     --primary-50: #D8EAF4;
 
-    --bg-light: #fff;
+    --bg-light: #FFF;
     --bg-dark: #0F1F38;
     --bg-gray: #F0F2F3;
 }
