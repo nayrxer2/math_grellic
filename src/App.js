@@ -4,20 +4,22 @@ import LandingPageSectionFeature from './components/landingpage/LandingPageSecti
 import LandingPageDashboard from './components/landingpage/LandingPageDashboard'
 import LandingPageStudentBenefits from './components/landingpage/LandingPageStudentBenefits'
 import LandingPageCTA from './components/landingpage/LandingPageCTA'
+import LandingSectionTeacherBenefits from './components/landingpage/LandingSectionTeacherBenefits'
+import LandingPageFooter from './components/landingpage/LandingPageFooter'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/main.css'
 
 function App() {
   return (
-      <div className="bg-logo">
+      <div className="bg-splash">
       <Navbar />
       <LandingPageSplash />
       <LandingPageSectionFeature />
       <LandingPageDashboard />
       <LandingPageStudentBenefits />
-        <div className="cta-logo">
-          <LandingPageCTA />
-        </div>
+      <LandingSectionTeacherBenefits />
+      <LandingPageCTA />
+      <LandingPageFooter />
       </div>
   );
 }

@@ -20,16 +20,16 @@ const Navbar = () => {
         setNavbar(false)
     }
 }
-  const [modalIsOpen, setModalIsOpen] = useState(false)
+const [modalIsOpen, setModalIsOpen] = useState(false)
 window.addEventListener('scroll', changeBackground)
 
   return (
-    <nav className='navbar active navbar-expand-lg fixed-top navbar-light active'>
+    <nav className={navbar ? 'navbar navbar-expand-lg fixed-top navbar-light' : 'navbar fixed-top navbar-expand-lg navbar-light active'}>
     <a className="navbar-brand" href="#"><img className="logo-brand mr-3" src={logo} /> MATH GRELLIC</a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       {/* <span className="navbar-toggler-icon"></span> */}
       <FontAwesomeIcon icon={faBars} style={{color:"#374785"}}/>
-    </button>
+    </button> 
   
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
@@ -39,7 +39,7 @@ window.addEventListener('scroll', changeBackground)
           )
         })}
           <li className="nav-item active">
-             <button onClick={() => setModalIsOpen(true)} type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</button>
+             <Button onClick={() => setModalIsOpen(true)} type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</Button>
              <Modal isOpen={modalIsOpen} className="login-modal-body">
                 <img className="brand-logo" src={logo} />
                 <div className="login-modal-close">
