@@ -7,7 +7,7 @@ import iconstack from '../../icons/figma_icons/stack.png'
 export default function LandingPageSectionFeature() {
     return (
         <div id="section-feature" className="container-fluid">
-        <div className="h2-heading text-high mb-4">WHY CHOOSE <span className="text-accent">MATH GRELLIC?</span></div> 
+        <div className="h2-heading text-high mb-4">ABOUT <span className="text-accent">MATH GRELLIC?</span></div> 
         <div className="row card-container">
           <div className="card-body col-4">
               <div className="border rounded grid-item-box border-light col-sm-auto col-xs-auto">
