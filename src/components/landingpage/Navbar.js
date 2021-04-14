@@ -41,11 +41,16 @@ window.addEventListener('scroll', changeBackground)
           <li className="nav-item active">
              <button onClick={() => setModalIsOpen(true)} type="button" className="btn btn-primary btn-enrol-here btn-nav">LOG IN</button>
              <Modal isOpen={modalIsOpen} className="login-modal-body">
-                <img className="brand-logo" src={logo} /> <button onClick={() => setModalIsOpen(false)} class="bi bi-x login-modal-close">CLOSE</button>
-                <div>
-                  <button onClick={() => setModalIsOpen(false)}>Close</button>
+                <img className="brand-logo" src={logo} />
+                <div className="login-modal-close">
+                  <Button onClick={() => setModalIsOpen(false)} 
+                  buttonStyle="tertiary" 
+                  >
+                    <i class="bi bi-x"></i>
+                    Close
+                  </Button>
                 </div>
-               
+                              
              </Modal>
           </li>
       </ul>
