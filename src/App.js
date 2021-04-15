@@ -1,8 +1,8 @@
 import Navbar from './components/landingpage/Navbar'
 import LandingPageSplash from './components/landingpage/LandingPageSplash'
-import LandingPageSectionFeature from './components/landingpage/LandingPageSectionFeature'
+import LandingPageSectionAbout from './components/landingpage/LandingPageSectionAbout'
 import LandingPageDashboard from './components/landingpage/LandingPageDashboard_excluded'
-import LandingPageStudentBenefits from './components/landingpage/LandingPageStudentBenefits'
+import LandingPageBenefits from './components/landingpage/LandingPageBenefits'
 import LandingPageCTA from './components/landingpage/LandingPageCTA'
 import LandingSectionTeacherBenefits from './components/landingpage/LandingSectionTeacherBenefits'
 import LandingPageFooter from './components/landingpage/LandingPageFooter'
@@ -16,8 +16,8 @@ function App() {
   <div className="bg-splash">  
     <Navbar />  
       <LandingPageSplash />
-      <LandingPageSectionFeature />
-      <LandingPageStudentBenefits />
+      <LandingPageSectionAbout />
+      <LandingPageBenefits />
       <LandingSectionTeacherBenefits />
       <LandingPageCTA />
       <LandingPageFooter />  
