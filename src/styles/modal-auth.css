@@ -1,0 +1,132 @@
+.modal-selection-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  
+.modal-selection-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+  
+.modal-selection-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    width: 50%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.brand-logo {
+    margin-left: 2%;
+    width: 2.25rem;
+    float: left;
+}
+
+.modal-selection-close {
+    float: right;
+}
+
+.selection-header {
+    margin-top: 100px;
+}
+
+.selection-label {
+    margin-top: -25px;
+    color: var(--text-high);
+}
+
+.selection-img {
+    border-radius: 25px;
+}
+
+.modal-auth-footer {
+    margin-bottom: 80px;
+}
+
+.modal-login-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    width: 55%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-user-label {
+    color: var(--accent);
+}
+
+.login-user {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.auth-submit {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.bg-login {
+    background-image: url('../images/login-bg.png');
+    background-repeat: no-repeat;
+    background-size: 55% 85%;
+    background-position-x: right;
+    background-position-y: bottom;
+    /* width: 100%; */
+    max-height: 90vh;
+}
+
+.login-user-link {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.sign-up-form-spacing {
+    margin-top: 10px;
+}
+
+.modal-signup-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    width: 55%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.bg-teacher-signup {
+    background-image: url('../images/teacher-signup-bg.png');
+    background-repeat: no-repeat;
+    background-size: 65% 55%;
+    background-position-x: right;
+    background-position-y: bottom;
+    /* width: 100%; */
+    max-height: 90vh;
+}
