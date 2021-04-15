@@ -82,9 +82,9 @@
     margin-left: 80px;
 }
 
-.login-submit {
+.auth-submit {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .bg-login {
@@ -95,4 +95,13 @@
     background-position-y: bottom;
     /* width: 100%; */
     max-height: 90vh;
+}
+
+.login-user-link {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.sign-up-form-spacing {
+    margin-top: 10px;
 }
