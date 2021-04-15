@@ -121,6 +121,14 @@ const Modal = forwardRef((props, ref) => {
                               <label for="formGroupExampleInput2" class="form-label label-med">Password</label>
                               <input type="text" class="form-control col-md-4" id="formGroupExampleInput2"/>
                             </div>
+                            <div class="mb-3">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required/>
+                            <label class="form-check-label body-2" for="invalidCheck2">
+                              Remember me
+                            </label>
+                            </div>
+                            </div> 
                             <div className="auth-submit">
                               <Button type="submit" buttonStyle="primary">LOGIN</Button>  
                             </div>                       
@@ -137,7 +145,7 @@ const Modal = forwardRef((props, ref) => {
                 {/* Signup*/}
                 {
                   showSignup ?
-                  <div className={"modal-login-box bg-login"}>
+                  <div className={"modal-signup-box bg-teacher-signup"}>
                     <div >
                       <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" ><i class="bi bi-x"></i>Close</Button></div>
                       <div><Button onClick={() => selection()} buttonStyle="tertiary" ><i class="bi bi-arrow-left-short"></i>BACK TO SELECTION</Button></div>                    
@@ -178,7 +186,7 @@ const Modal = forwardRef((props, ref) => {
                           <div class="col-md-6 sign-up-form-spacing">
                             <label for="validationDefault05" class="form-label label-med">Confirm Password</label>
                             <input type="text" class="form-control" id="validationDefault05" required/>
-                          </div>  
+                          </div>
                           <div className="auth-submit col-12">
                             <Button type="submit" buttonStyle="primary">SIGN UP</Button>  
                           </div>                       
