@@ -71,22 +71,22 @@ const Modal = forwardRef((props, ref) => {
                   {
                     showSelection ? 
                     <div className={"modal-selection-box"}>
-                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" ><i class="bi bi-x"></i>Close</Button></div>
+                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" buttonSize="large"><i class="bi bi-x"></i>Close</Button></div>
                       <img className="brand-logo" src={logo}/>
                       <div id="selection-container" className="modal-auth-footer">
                           <h1 className="h3-heading text-center selection-header">Which one are you?</h1>
-                          <p className="body-2 text-center">Select your role in the classroom to login</p>
+                          <p className="body-2 text-center mb-5">Select your role in the classroom to login</p>
 
                           <div class="row justify-content-center text-center">
-                            <div onClick={() => selection("Teacher")} class="col-lg-4 col-md-12">
-                              <img className="icon-style image-fluid selection-img" src={imgTeacher}/>
+                            <div onClick={() => selection("Teacher")} class="card-selection col-lg-3 col-md-12">
+                              <img className="img-fluid selection-img" src={imgTeacher}/>
                               <h4 className="subheading-bold selection-label">Teacher</h4>
                             </div>
                               
-                            <div onClick={() => selection("Student")} class="col-lg-4 col-md-12">
-                              <img className="icon-style image-fluid selection-img" src={imgStudent}/>
+                            <div onClick={() => selection("Student")} class="card-selection col-lg-3 col-md-12">
+                              <img className="img-fluid selection-img" src={imgStudent}/>
                               <h4 className="subheading-bold selection-label">Student</h4>  
-                            </div>
+                            </div>  
                             </div>
                         </div>
                     </div>

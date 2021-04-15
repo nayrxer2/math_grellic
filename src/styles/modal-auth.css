@@ -22,7 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 90vh;
-    width: 50%;
+    width: 65%;
     overflow: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -46,12 +46,17 @@
 }
 
 .selection-label {
-    margin-top: -25px;
     color: var(--text-high);
 }
 
+.card-selection{
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 .selection-img {
-    border-radius: 25px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .modal-auth-footer {
