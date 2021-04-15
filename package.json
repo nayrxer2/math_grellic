@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.15.1",
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.4.1",
     "jquery": "^3.6.0",

@@ -9,7 +9,7 @@ import { LinkButton } from '../LinkButton'
 
 export default function LandingPageDashboard() {
     return (
-        <div className="row col-12 pl-0"> 
+        <div id="section-dashboard" className="row col-12 pl-0"> 
             <div className="row col-md-4">
                 <img className="lines" src={imglinetop} />
             </div>

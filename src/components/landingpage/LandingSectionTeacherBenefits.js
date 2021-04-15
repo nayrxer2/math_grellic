@@ -7,7 +7,7 @@ import iconstudy from '../../icons/figma_icons/icon-study.png'
 
 export default function LandingSectionTeacherBenefits() {
     return (
-        <div className="container-fluid col-9 lstb-text-cntr justify-content-center">
+        <div id="section-teacher" className="container-fluid col-9 lstb-text-cntr justify-content-center">
                 <div className="h2-heading">Maximized <span className="text-accent">Teacher</span> Efficiency</div>
                 <div className="row lstb-mrgn-top">
                     <div className="col-sm-3">

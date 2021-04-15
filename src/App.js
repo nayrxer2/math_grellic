@@ -9,17 +9,19 @@ import LandingPageFooter from './components/landingpage/LandingPageFooter'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/main.css'
 
+import {Switch, Route, BrowserRouter, Router} from 'react-router-dom';
+
 function App() {
   return (
-      <div className="bg-splash">
-      <Navbar />
+  <div className="bg-splash">  
+    <Navbar />  
       <LandingPageSplash />
       <LandingPageSectionFeature />
       <LandingPageStudentBenefits />
       <LandingSectionTeacherBenefits />
       <LandingPageCTA />
-      <LandingPageFooter />
-      </div>
+      <LandingPageFooter />  
+  </div>
   );
 }
 
