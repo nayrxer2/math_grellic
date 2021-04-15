@@ -26,7 +26,7 @@ export const Button = ({
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
      //-----checks if the size is included in the array and if not, fallbacks to the first value in the list
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
     
 
     return(
