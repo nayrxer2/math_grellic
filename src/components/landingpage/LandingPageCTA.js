@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/landingpagecta.css'
+import '../../styles/landingpagestyle/landingpagecta.css'
 
 export default function LandingPageCTA() {
     return (

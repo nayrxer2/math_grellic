@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/landingpagesectionteacherbenefits.css'
+import '../../styles/landingpagestyle/landingpagesectionteacherbenefits.css'
 import stack2 from '../../icons/figma_icons/stack2.png'
 import iconspectrum from '../../icons/figma_icons/icon-spectrum.png'
 import iconmap from '../../icons/figma_icons/icon-map.png'

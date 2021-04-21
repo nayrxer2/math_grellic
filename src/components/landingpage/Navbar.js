@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import '../../styles/navbar.css'
 import logo from '../../images/logo-brand.png' 
-import imgTeacher from '../../images/teacher-img.png' 
-import imgStudent from '../../images/student-img.png' 
 import {LinkButton} from '../LinkButton'
 import {Button} from '../Button'
-import { NavItems } from './NavItems'
 //from fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -47,7 +44,7 @@ window.addEventListener('scroll', changeBackground)
     
             <div className="dropdown">
                 <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <LinkButton buttonBg={navbar ? "dark" : "light"}>About Math Grellic</LinkButton>
+                  <LinkButton buttonBg={navbar ? "dark" : "light"}>About Math Grellic <i class="bi bi-caret-down-fill" /></LinkButton>
                 </button>
                 <Anchor>
                   <div class="dropdown-menu">

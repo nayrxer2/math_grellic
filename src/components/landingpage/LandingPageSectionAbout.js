@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/landingpagesectionabout.css'
+import '../../styles/landingpagestyle/landingpagesectionabout.css'
 import iconboard from '../../icons/figma_icons/board.png'
 import iconscroll from '../../icons/figma_icons/scroll.png'
 import iconstack from '../../icons/figma_icons/stack.png'
