@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/landingpagefooter.css'
+import '../../styles/landingpagestyle/landingpagefooter.css'
 import logo from '../../images/logo-brand.png'
 
 export default function LandingPageFooter() {

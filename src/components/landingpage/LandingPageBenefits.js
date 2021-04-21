@@ -2,7 +2,7 @@ import React from 'react'
 import icontimezone from '../../icons/figma_icons/icon-timezone.png'
 import iconspectrum from '../../icons/figma_icons/icon-spectrum.png'
 import iconmap from '../../icons/figma_icons/icon-map.png'
-import '../../styles/landingpagebenefits.css'
+import '../../styles/landingpagestyle/landingpagebenefits.css'
 import logobghuman from '../../images/2-human-char.png'
 export default function LandingPageBenefits() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/landingpagesplash.css'
+import '../../styles/landingpagestyle/landingpagesplash.css'
 import { Button } from '../Button'
 import Modal from '../modals/modal-auth'
 
