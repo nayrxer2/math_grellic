@@ -5,12 +5,12 @@ import iconscroll from '../../icons/figma_icons/scroll.png'
 import iconstack from '../../icons/figma_icons/stack.png'
 import logo from '../../images/logo-brand-bg.png'
 
-export default function LandingPageSectionFeature() {
+export default function LandingPageSectionAbout() {
     return (
-        <div id="section-feature" className="container-fluid">
+        <div id="section-about" className="container-fluid">
         <div className="row container-fluid">
           <div className="col-md-5">
-            <img className="lp-logo-brand-bg" src={logo} />
+            <img className="lp-logo-brand-bg" src={logo} alt=""/>
           </div>
             <div className="col-md-7">
               <p className="h2-heading text-high mb-4">ABOUT US</p> 
@@ -24,7 +24,7 @@ export default function LandingPageSectionFeature() {
           <div className="card-body col-4">
               <div className="border rounded grid-item-box border-light col-sm-auto col-xs-auto">
                 <div className="card-item">
-                  <img className="icon-style" src={iconboard}/>
+                  <img className="icon-style" src={iconboard} alt=""/>
                   <h4 className="card-title subheading-bold">Maximized Teacher Efficiency</h4>
                   <p className="lead-2 text-med">Spend less time on paperwork and assessments. Easily track students’ progress and give immediate feedback.</p>
                 </div>
@@ -33,7 +33,7 @@ export default function LandingPageSectionFeature() {
           <div className="card-body col-4">
             <div className="border rounded grid-item-box border-light card col-sm-auto col-xs-auto">
               <div className="card-item">
-                <img className="icon-style" src={iconscroll}/>
+                <img className="icon-style" src={iconscroll} alt=""/>
                 <h4 className="card-title subheading-bold">User Friendly</h4>
                 <p className="lead-2 text-med">Easy to use both for students and teachers, either technology savvy or not.</p>
               </div>
@@ -42,7 +42,7 @@ export default function LandingPageSectionFeature() {
           <div className="card-body col-4">
             <div className="border rounded grid-item-box border-light card col-sm-auto col-xs-auto">
               <div className="card-item">
-                <img className="icon-style" src={iconstack}/>
+                <img className="icon-style" src={iconstack} alt=""/>
                 <h4 className="card-title subheading-bold">Organized Course</h4>
                 <p className="lead-2 text-med">Lessons and assessments are organized in a way of increasing difficulty to gradually facilitate the absorption of topics at hand</p>
               </div>

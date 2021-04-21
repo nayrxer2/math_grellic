@@ -33,7 +33,7 @@ window.addEventListener('scroll', changeBackground)
 
   return (
     <nav className={navbar ? 'row navbar navbar-expand-lg fixed-top navbar-light' : 'row navbar navbar-expand-lg fixed-top navbar-light inactive-nav '}>
-    <a className={ navbar ? "navbar-brand txt-secondary" : "active-navbar-brand" } href="#"><img className={ navbar ? "logo-brand  mr-3 " : "inactive-logo-brand"} src={logo} /> MATH GRELLIC</a>
+    <a className={navbar ? "navbar-brand txt-secondary" : "active-navbar-brand" }  href="#/"><img className={ navbar ? "logo-brand  mr-3 " : "inactive-logo-brand"} src={logo} alt=""/> MATH GRELLIC</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     
     <FontAwesomeIcon icon={faBars} style={{color:"#374785"}}/>
@@ -44,14 +44,14 @@ window.addEventListener('scroll', changeBackground)
     
             <div className="dropdown">
                 <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <LinkButton buttonBg={navbar ? "dark" : "light"}>About Math Grellic <i class="bi bi-caret-down-fill" /></LinkButton>
+                  <LinkButton buttonBg={navbar ? "dark" : "light"}>About Math Grellic <i className="bi bi-caret-down-fill" /></LinkButton>
                 </button>
                 <Anchor>
-                  <div class="dropdown-menu">
-                    {/* <h6 class="dropdown-header">Dropdown header</h6> */}
-                    <Link><a class="dropdown-item" href="#">Background</a></Link>
-                    <Link><a class="dropdown-item" href="#section-feature">Features</a></Link>
-                    <Link><a class="dropdown-item" href="#section-teacher">Benefits</a></Link>
+                  <div className="dropdown-menu">
+                    {/* <h6 className="dropdown-header">Dropdown header</h6> */}
+                    <Link><a className="dropdown-item" href="#section-about">Background</a></Link>
+                    <Link><a className="dropdown-item" href="#section-benefits">Benefits</a></Link>
+                    <Link><a className="dropdown-item" href="#section-features">Features</a></Link>
                   </div>
                 </Anchor>
             </div>

@@ -3,7 +3,7 @@ import LandingPageSplash from './components/landingpage/LandingPageSplash'
 import LandingPageSectionAbout from './components/landingpage/LandingPageSectionAbout'
 import LandingPageBenefits from './components/landingpage/LandingPageBenefits'
 import LandingPageCTA from './components/landingpage/LandingPageCTA'
-import LandingSectionTeacherBenefits from './components/landingpage/LandingSectionTeacherBenefits'
+import LandingSectionFeatures from './components/landingpage/LandingSectionFeatures'
 import LandingPageFooter from './components/landingpage/LandingPageFooter'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/main.css'
@@ -15,7 +15,7 @@ function App() {
       <LandingPageSplash />
       <LandingPageSectionAbout />
       <LandingPageBenefits />
-      <LandingSectionTeacherBenefits />
+      <LandingSectionFeatures />
       <LandingPageCTA />
       <LandingPageFooter />  
   </div>

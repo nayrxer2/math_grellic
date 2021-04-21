@@ -7,9 +7,9 @@ import iconstudy from '../../icons/figma_icons/icon-study.png'
 import iconfeature from '../../icons/figma_icons/icon-feature.png'
 import iconscroll from '../../icons/figma_icons/icon-scroll.png'
 
-export default function LandingSectionTeacherBenefits() {
+export default function LandingSectionFeatures() {
     return (
-        <div id="section-teacher" className="container-fluid lstb-text-cntr section-top">
+        <div id="section-features" className="container-fluid lstb-text-cntr section-top">
                 <div className="h2-heading row justify-content-center"><p>Key <span className="text-accent">Features</span></p></div>
                 <div className="row lstb-mrgn-top justify-content-center">
 
