@@ -71,19 +71,19 @@ const Modal = forwardRef((props, ref) => {
                     showSelection ? 
                     <div className={"modal-selection-box"}>
                       <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" buttonSize="large"><i className="bi bi-x"></i>Close</Button></div>
-                      <img className="brand-logo" src={logo}/>
+                      <img className="brand-logo" src={logo} alt=""/>
                       <div id="selection-container" className="modal-auth-footer">
                           <h1 className="h3-heading text-center selection-header text-high">Which one are you?</h1>
                           <p className="body-2 text-center mb-5 text-med">Select your role in the classroom to login</p>
 
                           <div className="row justify-content-center text-center">
                             <div onClick={() => selection("Teacher")} className="card-selection col-lg-3 col-md-12">
-                              <img className="img-fluid selection-img" src={imgTeacher}/>
+                              <img className="img-fluid selection-img" src={imgTeacher} alt=""/>
                               <h4 className="subheading-bold selection-label txt-secondary">Teacher</h4>
                             </div>
                               
                             <div onClick={() => selection("Student")} className="card-selection col-lg-3 col-md-12">
-                              <img className="img-fluid selection-img" src={imgStudent}/>
+                              <img className="img-fluid selection-img" src={imgStudent} alt=""/>
                               <h4 className="subheading-bold selection-label txt-secondary">Student</h4>  
                             </div>  
                             </div>

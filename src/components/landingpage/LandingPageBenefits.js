@@ -12,7 +12,7 @@ export default function LandingPageBenefits() {
                 <div className="col-md-9">
                     <div className="row">
                             <div className="col-md-auto">   
-                                <img src={icontimezone}></img>
+                                <img src={icontimezone} alt="icontimezone"></img>
                             </div>
                             <div className="col">
                                 <p className="h5-heading">Easy Tracking</p>
@@ -21,7 +21,7 @@ export default function LandingPageBenefits() {
                         </div>
                     <div className="row">
                             <div className="col-md-auto">
-                                <img src={iconspectrum}></img>
+                                <img src={iconspectrum} alt="iconspectrum"></img>
                             </div> 
                             <div className="col">
                                 <p className="h5-heading">Learning is Fun</p>
@@ -30,7 +30,7 @@ export default function LandingPageBenefits() {
                         </div>
                     <div className="row">
                             <div className="col-md-auto">
-                                <img src={iconmap}></img>
+                                <img src={iconmap} alt=""></img>
                             </div>
                             <div className="col">
                                 <p className="h5-heading">Flexible Study Terms</p>
