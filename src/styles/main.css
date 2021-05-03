@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 html {
     scroll-behavior: smooth;
-  }
+}
 body{
     font-family: "Manrope", sans-serif;
     width: 100%;
@@ -196,13 +196,6 @@ body{
     background: url('../images/cta-bg.png') no-repeat;
 }
 
-/* .cta-logo {
-    background-image: url('../images/CTA.png');
-    background-repeat: no-repeat !important;
-    background-size: cover;
-    height: 130vh;
-    margin-top: -1rem;
-} */
 .section-top {
     margin-top: -10rem;
 }

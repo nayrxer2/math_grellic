@@ -1,0 +1,17 @@
+.stndnt-container{
+    display: flex;
+    background-color: var(--primary);
+    background-size: 100%;
+}
+.sidenav {
+   justify-self: start;
+   background-color: lightblue !important;
+   width: 13.938rem !important;
+}
+ul{
+    list-style-type: none;
+}
+.dtp{
+    justify-content: flex-end;
+    margin-right: 0 !important;
+}
