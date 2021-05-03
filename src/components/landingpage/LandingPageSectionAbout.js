@@ -13,13 +13,13 @@ export default function LandingPageSectionAbout() {
             <img className="lp-logo-brand-bg" src={logo} alt=""/>
           </div>
             <div className="col-md-7">
-              <p className="h2-heading text-high mb-4">ABOUT US</p> 
+              <p className="h2-heading text-high mb-4">About Us</p> 
               <p className="lead-1 text-med"><span className="text-accent">Math Grellic</span> is a game-based website application designed and developed to help address the least dealt learning competencies of the K to 12 Basic Education Curriculum for the Alternative Learning System (ALS-K to 12) specifically in the Learning Strand 3 (Mathematical and Problem Solving Skills).</p>                
               <p className="lead-1 text-med">Moreover, this website application is designed not only to help the Alternative Learning System (ALS) learners master a mathematical skill but also the Alternative Learning System (ALS) teachers to easily track the progress of their learners and give feedbacks immediately. Less paper works in the case of teachers for everything is made easier through the help of technology. </p>          
             </div>
           </div>
         <div className="container-fluid row">
-        <div className="h2-heading text-high mb-4">ABOUT <span className="text-accent">MATH GRELLIC?</span></div> 
+        <div className="h2-heading text-high mb-4">Why <span className="text-accent">choose us?</span></div> 
         <div className="row card-container">
           <div className="card-body col-4">
               <div className="border rounded grid-item-box border-light col-sm-auto col-xs-auto">
@@ -44,7 +44,7 @@ export default function LandingPageSectionAbout() {
               <div className="card-item">
                 <img className="icon-style" src={iconstack} alt=""/>
                 <h4 className="card-title subheading-bold">Organized Course</h4>
-                <p className="lead-2 text-med">Lessons and assessments are organized in a way of increasing difficulty to gradually facilitate the absorption of topics at hand</p>
+                <p className="lead-2 text-med">Lessons, drills, excercises and assessments are organized in a way of increasing difficulty to gradually facilitate the absorption of topics at hand</p>
               </div>
             </div>
           </div>

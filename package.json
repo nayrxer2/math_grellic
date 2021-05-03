@@ -2,6 +2,7 @@
   "name": "math_grellic",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://math_grellic/home",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -16,6 +17,7 @@
     "popper.js": "^1.16.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
+    "react-datetime-picker": "^3.2.1",
     "react-dom": "^17.0.2",
     "react-modal": "^3.12.1",
     "react-router-dom": "^5.2.0",
