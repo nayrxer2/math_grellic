@@ -1,17 +1,148 @@
 .stndnt-container{
     display: flex;
     background-color: var(--primary);
-    background-size: 100%;
-}
-.sidenav {
-   justify-self: start;
-   background-color: lightblue !important;
-   width: 13.938rem !important;
-}
+    height: 100vh;
+    overflow: hidden;
+    float: right;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ul{
     list-style-type: none;
 }
 .dtp{
     justify-content: flex-end;
     margin-right: 0 !important;
+    /* object-fit: fill; */
 }
+.c-1{
+    display: inline-block !important;
+    overflow-y: auto;
+    white-space: nowrap;
+    max-height: 90vh;  
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.c-2{
+    overflow-x: auto;
+    white-space: nowrap ;
+    max-height: 7.5rem;
+    /* -webkit-overflow-scrolling: touch; */
+}
+
