@@ -19,88 +19,92 @@ const StudentDashboard = () => {
     }
 
     return (
-        <div className="stndnt-container">
+        <div className="stndnt-container col">
             <div className="container">
-                <div className=" row dtp">
+                <div className="row dtp">
                     {dt}
                 </div>
-                <div className=" row">
+                <div className="row">
                     <i className="bi bi-brightness-high"><span>Hello Mae</span></i>
-                </div>
-                <div className="row content">
-                <div className="col-4 c-1">
-                    <div className=" c-2">
+                </div>                                                                                                                         
+                <div className="row">
+                <div className="col-6 column-1">
+                        <p className="">Today’s announcement</p>
+                        <p className="">Any announcements made by the teacher will be put here to notify the students </p>                                 
+                    <div className="row column-2">
                         <div className="card-body">
                             <div className="border rounded border-light card">
                                 <div className="card-item">
-                                    <p className="card-title">1</p>
+                                    <p className="card-title">111111111111111111111111</p>
                                 </div>
                             </div>
                         </div>
                         <div className="card-body">
                             <div className="border rounded border-light card">
                                 <div className="card-item">
-                                    <p className="card-title">1</p>
+                                    <p className="card-title">111111111111111111111111</p>
                                 </div>
                             </div>
                         </div>
                         <div className="card-body">
                             <div className="border rounded border-light card">
                                 <div className="card-item">
-                                    <p className="card-title">1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className=" row">
-                        <div className="card-body">
-                            <div className="border rounded border-light card">
-                                <div className="card-item">
-                                    <p className="card-title">1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card-body">
-                            <div className="border rounded border-light card">
-                                <div className="card-item">
-                                    <p className="card-title">1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card-body">
-                            <div className="border rounded border-light card">
-                                <div className="card-item">
-                                    <p className="card-title">1</p>
+                                    <p className="card-title">111111111111111111111111</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className=" row">
+                    <p>Upcoming Lessons</p>
+                    <div className="column-2 row">
                         <div className="card-body">
                             <div className="border rounded border-light card">
                                 <div className="card-item">
-                                    <p className="card-title">1</p>
+                                    <p className="card-title">111111111111111111111111</p>
                                 </div>
                             </div>
                         </div>
                         <div className="card-body">
                             <div className="border rounded border-light card">
                                 <div className="card-item">
-                                    <p className="card-title">1</p>
+                                    <p className="card-title">111111111111111111111111</p>
                                 </div>
                             </div>
                         </div>
                         <div className="card-body">
                             <div className="border rounded border-light card">
                                 <div className="card-item">
-                                    <p className="card-title">1</p>
+                                    <p className="card-title">111111111111111111111111</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Upcoming Lessons</p>
+                    <div className="row column-2">
+                        <div className="card-body">
+                            <div className="border rounded border-light card">
+                                <div className="card-item">
+                                    <p className="card-title">111111111111111111111111</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div className="card-body">
+                            <div className="border rounded border-light card">
+                                <div className="card-item">
+                                    <p className="card-title">111111111111111111111111</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-body">
+                            <div className="border rounded border-light card">
+                                <div className="card-item">
+                                    <p className="card-title">111111111111111111111111</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>  
 
-                <div className=" col scroll-div">
+                <div className="col-3 scroll-div">
                     <div className="card-body">
                         <div className="border rounded border-light card">
                             <div className="card-item">
@@ -124,7 +128,7 @@ const StudentDashboard = () => {
                     </div>
                 </div>
 
-                <div className=" col-4">
+                <div className="col-3">
                     <div className="card-body">
                         <div className="border rounded border-light card">
                             <div className="card-item">

@@ -1,127 +1,12 @@
 .stndnt-container{
     display: flex;
+    justify-self: flex-end;
     background-color: var(--primary);
     height: 100vh;
     overflow: hidden;
     float: right;
+    max-width: 100%;
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ul{
     list-style-type: none;
 }
@@ -130,19 +15,21 @@ ul{
     margin-right: 0 !important;
     /* object-fit: fill; */
 }
-.c-1{
-    display: inline-block !important;
+.column-1{
     overflow-y: auto;
-    white-space: nowrap;
-    max-height: 90vh;  
+    max-height: 90vh;
 }
 ::-webkit-scrollbar{
     display: none;
 }
-.c-2{
+.column-2{
     overflow-x: auto;
     white-space: nowrap ;
-    max-height: 7.5rem;
-    /* -webkit-overflow-scrolling: touch; */
+    max-height: 9rem;
+    margin: 0 -1rem 0 -1rem m !important;
+    margin-right:-1rem !important;
+    margin-left:-1rem !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
 }
 
