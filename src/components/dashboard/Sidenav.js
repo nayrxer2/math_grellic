@@ -4,16 +4,50 @@ import logo from '../../images/logo-brand.png'
 
 function SideNav() {
     return (
-        <div className="sidenav">
-            <p className="txt-secondary navbar-brand"  href="#/"><img className="logo-brand" src={logo} alt=""/> MATH GRELLIC</p>
-            <ul>
-                <li><i className="bi bi-grid"></i> Home</li>
-                <li><i className="bi bi-collection-play"></i> Lessons</li>
-                <li><i className="bi bi-dice-3"></i> Drills and Exercises</li>
-                <li><i className="bi bi-file-earmark-bar-graph"></i> Exams</li>
-                <li><i className="bi bi-bar-chart"></i> Performance</li>
-                <li><i className="bi bi-chat"></i> Ask Help</li>
-            </ul>  
+        <div className="sidebar">        
+            <div className="sidebar-brand">
+                <h2><span className=""><img classname="" src={logo} alt="" /></span> Math Grellic</h2> 
+            </div>  
+            <div className="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Tasks</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
