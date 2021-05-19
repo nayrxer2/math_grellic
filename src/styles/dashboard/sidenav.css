@@ -10,8 +10,9 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
+
 .sidebar{
-    width: 345px;
+    width: 239px;
     position: fixed;
     left: 0 !important;
     top: 0 !important;
@@ -86,7 +87,7 @@
   
  #nav-toggle:checked ~ header{
      width: calc(100% - 70px);
-     left: 70px;
+     margin-left: 70px;
  } 
 #nav-toggle {
     display: none !important;

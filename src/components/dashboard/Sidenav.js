@@ -4,7 +4,7 @@ import logo from '../../images/logo-brand.png'
 
 function SideNav() {
     return (  
-        <div>
+        <div className="">
         <input type="checkbox" id="nav-toggle"/>  
         <div className="sidebar">            
             <div className="sidebar-brand">
