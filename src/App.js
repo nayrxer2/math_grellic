@@ -30,6 +30,7 @@ function App() {
         </Route>
         <Route exact path="/student">
           <div className="row">
+          <input type="checkbox" id="nav-toggle"/>  
             <Sidenav />
             <StudentDashboard />
           </div>

@@ -4,13 +4,17 @@ import logo from '../../images/logo-brand.png'
 
 function SideNav() {
     return (  
-        <div className="">
-        <input type="checkbox" id="nav-toggle"/>  
-        <div className="sidebar">            
+        <div className="sidebar"> 
             <div className="sidebar-brand">
-                <h2><span><img className="brand-logo" src={logo} alt="" /></span><span className="h2-align txt-secondary navbar-brand">Math Grellic</span></h2> 
-            </div>  
-
+                <h2>
+                    <span>
+                        <img className="brand-logo" src={logo} alt="" />
+                    </span>
+                    <span className="txt-secondary navbar-brand">
+                        Math Grellic
+                    </span>
+                </h2> 
+            </div> 
             <div className="sidebar-menu">
                 <ul>
                     <li>
@@ -51,8 +55,7 @@ function SideNav() {
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>        
+        </div>      
     )
 }
 

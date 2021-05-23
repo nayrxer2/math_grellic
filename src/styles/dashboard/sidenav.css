@@ -1,8 +1,3 @@
- :root{
-    --main-color: #dd2f6e;
-    --color-dark: #1d2231;
-    --text-grey: #8390a2;
-}
 *{
     padding: 0;
     margin: 0;
@@ -10,70 +5,85 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
-
-.sidebar{
-    width: 239px;
+.sidebar
+{
+    width: 300px;
     position: fixed;
     left: 0 !important;
     top: 0 !important;
-    height: 100%;   
-    /* background: var(--main-color); */
+    height: 100%; 
     z-index: 100;
-    transition: 300ms;
+    transition: 400ms !important;
+    background-color: #fff;
 }
-/* .brand-logo{
+.brand-logo
+{
     height: 24px;
     width: 24px;
-} */
-.sidebar-brand{
+    line-height: 60px;
+}
+.sidebar-brand
+{
     height: 90px;
-    padding: 1rem 0rem 1rem 2rem;
+    padding: 1rem 0rem 1rem 1rem;
     color: #fff;
     display: flex;
 }
-.sidebar-brand span {
+.sidebar-brand span 
+{
     display: inline-block;
     padding-right: 1rem;  
 }
 .sidebar-menu {
     margin-top: 4rem;
 }
-.sidebar-menu li {
+.sidebar-menu li 
+{
     width: 100%;
     margin-bottom: 1.3rem;
-    padding-left: 2rem;
+    padding-left: .5rem;   
+    transition: 400ms !important;
 }
-.sidebar-menu a {
+.sidebar-menu a 
+{
     padding-left: 1rem;
     display: block;
     color: var(--text-accent);
-    font-size: 1.2rem;
+    font-size: var(--label-small);
+    transition: 400ms !important;
 }
-.sidebar-menu a.active {
-    /* background: #fff; */
+.sidebar-menu a.active 
+{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: var(--accent);  
-    /* border-radius: 30px 0 0 30px; */
+    color: var(--accent); 
 }
-.sidebar-menu a span:first-child {
+.sidebar-menu a span:first-child 
+{
     font-size: 1.5rem;
     padding-right: 1rem;
+    height: 17.5px;
+    width: 17.5px;
 }
-#nav-toggle:checked + .sidebar{
+#nav-toggle:checked + .sidebar
+{
     width: 70px;
- } 
+    transition: 400ms !important;
+} 
  #nav-toggle:checked + .sidebar .sidebar-brand,
- #nav-toggle:checked + .sidebar li {
+ #nav-toggle:checked + .sidebar li  {
      padding-left: 1rem;
      text-align: center;
+     transition: 400ms !important;
  } 
  #nav-toggle:checked + .sidebar li a{
      padding-left: 0rem;
+     transition: 400ms !important;
  } 
  #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
  #nav-toggle:checked + .sidebar li a span:last-child {
      display: none !important;
+     transition: 400ms !important;
  }   
  #nav-toggle {
      display: none !important;
@@ -81,86 +91,108 @@
  }
  
  #nav-toggle:checked ~ .main-dashboard{
-     margin-left: 70px !important;
+     margin-left: 70px;
      width: 100%;
+     transition: 500ms !important;
  } 
   
- #nav-toggle:checked ~ header{
-     width: calc(100% - 70px);
-     margin-left: 70px;
+ #nav-toggle:checked  ~ header{
+    width: calc(100% - 70px);
+    left: 70px;
  } 
 #nav-toggle {
     display: none !important;
-    transition: 300ms !important;
+    transition: 600ms !important;
 }
 @media screen and (max-width: 1200px){
-    .sidebar{
-        width: 70px;
+    .sidebar
+    {
+        width: 80px;
      } 
      .sidebar .sidebar-brand,
      .sidebar li {
          padding-left: 1rem;
          text-align: center;
      } 
-    .sidebar li a{
+    .sidebar li a
+    {
          padding-left: 0rem;
      } 
     .sidebar .sidebar-brand h2 span:last-child,
     .sidebar li a span:last-child {
          display: none !important;
      }  
-    .main-dashboard{
-         margin-left: 70px !important;
+    .main-dashboard
+    {
+         margin-left: 80px !important;
     } 
       
-     header{
+     header
+     {
          width: calc(100% - 70px);
-         left: 70px;
+         left: 81px;
      } 
-     /* .sidebar:hover{
-        width: 345px;
+     #nav-toggle:checked + .sidebar 
+    {
+        left: 0 !important;
         z-index: 200;
-     } 
-     .sidebar:hover .sidebar-brand,
-     .sidebar:hover li {
-         padding-left: 2rem;
-         text-align: left;
-     } 
-    .sidebar:hover li a{
-         padding-left: 1rem;
-     } 
-    .sidebar:hover .sidebar-brand h2 span:last-child,
-    .sidebar:hover li a span:last-child {
-         display: inline !important;
-     }   */
+        width: 365px !important;
+    }
+    #nav-toggle:checked + .sidebar .sidebar-brand,
+    #nav-toggle:checked + .sidebar li {
+        padding-left: 2rem;
+        text-align: left;
+    }
+    #nav-toggle:checked + .sidebar li a{
+        padding-left: 1rem;
+    }  
+    #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+    #nav-toggle:checked + .sidebar li a span:last-child {
+        display: inline !important;
+    }  
+    #nav-toggle:checked ~ header {
+        margin-left: 365px !important;
+    }  
 }
 
 @media screen and (max-width: 900px){
     .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .recent-grid {
-        grid-template-columns: 60% 40%;
-    }
-}
-@media screen and (max-width: 768px){
-    .cards {
         grid-template-columns: repeat(2, 1fr);
     }
     .recent-grid {
-        grid-template-columns: 100%;
+        grid-template-columns: 60% 40%;
+        grid-template-columns: repeat(1, 1fr);
     }
-    .search-wrapper{
+}
+@media screen and (max-width: 768px){   
+    header 
+    {
+        left: 0 !important;
+    }
+    .cards 
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .recent-grid 
+    {
+        grid-template-columns: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .search-wrapper
+    {
         display: none;
     }
-    .sidebar {
+    .sidebar 
+    {
         left: -100% !important;
     }
-    header h2 {
+    header h2 
+    {
         display: flex;
         align-items: center;
     }
-    header h2 label {
+    header h2 label 
+    {
         display: inline-block; 
         background: var(--main-color);
         padding-right: 0rem;
@@ -174,31 +206,37 @@
         justify-content: center; 
         text-align: center;      
     }
-    header h2 span {
+    header h2 span 
+    {
         text-align: center;
         padding-right: 0rem;
     }
-    header h2 {
+    header h2 
+    {
         font-size: 1.1rem;
     }
-    .main-dashboard {
+    .main-dashboard 
+    {
         width: 100%;
         margin-left: 0rem !important;
     }
-    header {
+    header 
+    {
         width: 100%;
-        left: 0 !important;
+        margin-left: 0 !important;
+        z-index: 300 !important;
     }
-    #nav-toggle:checked + .sidebar {
+    #nav-toggle:checked + .sidebar 
+    {
         left: 0 !important;
-        z-index: 100;
-        width: 345px;
+        z-index: 200;
+        width: 365px !important;
     }
     #nav-toggle:checked + .sidebar .sidebar-brand,
     #nav-toggle:checked + .sidebar li {
         padding-left: 2rem;
         text-align: left;
-    } 
+    }
     #nav-toggle:checked + .sidebar li a{
         padding-left: 1rem;
     }  
@@ -208,7 +246,7 @@
     }  
     #nav-toggle:checked ~ .main-dashboard {
         margin-left: 0rem !important;
-    }
+    }  
 }
 @media screen and (max-width: 560px){
     .cards {
