@@ -13,7 +13,7 @@
     top: 0 !important;
     height: 100%; 
     z-index: 100;
-    transition: 400ms !important;
+     transition: 500ms !important;
     background-color: #fff;
 }
 .brand-logo
@@ -42,7 +42,7 @@
     width: 100%;
     margin-bottom: 1.3rem;
     padding-left: .5rem;   
-    transition: 400ms !important;
+    transition: 500ms !important;
 }
 .sidebar-menu a 
 {
@@ -50,7 +50,7 @@
     display: block;
     color: var(--text-accent);
     font-size: var(--label-small);
-    transition: 400ms !important;
+    transition: 500ms !important;
 }
 .sidebar-menu a.active 
 {
@@ -68,26 +68,26 @@
 #nav-toggle:checked + .sidebar
 {
     width: 70px;
-    transition: 400ms !important;
+    transition: 500ms !important;
 } 
  #nav-toggle:checked + .sidebar .sidebar-brand,
  #nav-toggle:checked + .sidebar li  {
      padding-left: 1rem;
      text-align: center;
-     transition: 400ms !important;
+     transition: 500ms !important;
  } 
  #nav-toggle:checked + .sidebar li a{
      padding-left: 0rem;
-     transition: 400ms !important;
+     transition: 500ms !important;
  } 
  #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
  #nav-toggle:checked + .sidebar li a span:last-child {
      display: none !important;
-     transition: 400ms !important;
+     transition: 500ms !important;
  }   
  #nav-toggle {
      display: none !important;
-     transition: 300ms !important;
+     transition: 500ms !important;
  }
  
  #nav-toggle:checked ~ .main-dashboard{
@@ -95,14 +95,24 @@
      width: 100%;
      transition: 500ms !important;
  } 
-  
+/*   
  #nav-toggle:checked  ~ header{
-    width: calc(100% - 70px);
-    left: 70px;
- } 
+    width: calc(100% - 70px) !important;
+    margin-left: 70px !important;
+ }  */
+ .header_Q
+{   
+    width: calc(100% - 301px) !important;
+    left: 301px !important;  
+}
+.header_W
+{   
+    width: calc(100% - 70px) !important;
+    left: 70px !important;   
+} 
 #nav-toggle {
     display: none !important;
-    transition: 600ms !important;
+    transition: 500ms !important;
 }
 @media screen and (max-width: 1200px){
     .sidebar
@@ -129,8 +139,8 @@
       
      header
      {
-         width: calc(100% - 70px);
-         left: 81px;
+         width: calc(100% - 71px);
+         left: 71px;
      } 
      #nav-toggle:checked + .sidebar 
     {
@@ -149,10 +159,17 @@
     #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
     #nav-toggle:checked + .sidebar li a span:last-child {
         display: inline !important;
-    }  
-    #nav-toggle:checked ~ header {
-        margin-left: 365px !important;
-    }  
+    }
+    .header_Q
+    {   
+        width: calc(100% - 81px) !important;
+        left: 81px !important;  
+    }
+    .header_W
+    {   
+        width: calc(100% - 365px) !important;
+        left:  365px!important;   
+    } 
 }
 
 @media screen and (max-width: 900px){
@@ -167,7 +184,8 @@
 @media screen and (max-width: 768px){   
     header 
     {
-        left: 0 !important;
+        width: 100% !important;
+        margin-left: 0 !important;
     }
     .cards 
     {
@@ -217,7 +235,7 @@
     }
     .main-dashboard 
     {
-        width: 100%;
+        width: 100% !important;
         margin-left: 0rem !important;
     }
     header 
@@ -247,6 +265,9 @@
     #nav-toggle:checked ~ .main-dashboard {
         margin-left: 0rem !important;
     }  
+    #nav-toggle:checked ~ header {
+        left: 0rem !important;
+    }   
 }
 @media screen and (max-width: 560px){
     .cards {

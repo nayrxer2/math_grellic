@@ -1,26 +1,43 @@
 import userimg from '../../images/user.jpg'
 import '../../styles/dashboard/studentdashboard.css'
-import avail_less from '../../icons/figma_icons/available_lesson.png'
-import comp_act from '../../icons/figma_icons/completed_activity.png'
-import pend_act from '../../icons/figma_icons/pending_activites.png'
+import less_avail from '../../icons/figma_icons/lessons-availbale.png'
+import act_comp from '../../icons/figma_icons/activities-completed.png'
+import act_pend from '../../icons/figma_icons/activities-completed.png'
+import React, { useState } from 'react'
+import { Component } from 'react'
 
-const StudentDashboard = () => {
+// const StudentDashboard  = () => {
+class StudentDashboard extends Component {
 
-    return (
-        <div className="main-dashboard">
-            <header>
-                <h2>
-                    <label htmlFor="nav-toggle">
+    constructor(props) {
+        super(props);
+        this.addActiveClass = this.addActiveClass.bind(this);
+        this.state = {
+            active: false,
+        };
+    }
+    addActiveClass () {
+        const currentState = this.state.active;
+        this.setState({
+            active: !currentState
+        });
+    };
+    
+
+    render () {
+        return  ( 
+            <div className="main-dashboard">
+                <header className={ this.state.active ? 'header_W' : 'header_Q'}> 
+                    <label onClick={this.addActiveClass} htmlFor="nav-toggle">
                         <span><i className="bi bi-list"></i></span>
                     </label>
-                    Good Morning, Mae!
-                </h2>
                 <div className="user-wrapper">
                     <div>
                         <h4>John Doe</h4>
                     </div>
                     <img src={userimg} alt="" />
                 </div>
+                <div><span><i className="bi-brightness-high"></i></span> Good Morning, Mae!</div>
             </header>
         <main>         
             <div className="recent-grid">
@@ -40,7 +57,7 @@ const StudentDashboard = () => {
                                     <div className="cards">
                                         <div className="card-single card-anncmnt">
                                             <div>
-                                            <span><img className="card-icons" src={avail_less}></img></span>
+                                            <span><img className="card-icons" src={less_avail}></img></span>
                                             </div>
                                             <div>
                                                 <p>3 lessons <span><br/>Available Lessons</span></p>
@@ -48,7 +65,7 @@ const StudentDashboard = () => {
                                         </div>
                                         <div className="card-single card-anncmnt">
                                             <div>
-                                                <span><img className="card-icons" src={pend_act}></img></span>
+                                                <span><img className="card-icons" src={act_pend}></img></span>
                                             </div>
                                             <div>
                                                 <p>2 Activities <span><br/>Pending Activities</span></p>
@@ -56,7 +73,7 @@ const StudentDashboard = () => {
                                         </div>
                                         <div className="card-single card-anncmnt">
                                             <div>
-                                            <span><img className="card-icons" src={comp_act}></img></span>
+                                            <span><img className="card-icons" src={act_comp}></img></span>
                                             </div>
                                             <div>
                                                 <p>5 activities <span><br/>Completed Activities</span></p>                                               
@@ -239,7 +256,8 @@ const StudentDashboard = () => {
             </div>
         </main>
     </div>
-    )
-}
-
+        )
+    }
+       
+}    
 export default StudentDashboard
