@@ -2,13 +2,14 @@
 {
     transition: 400ms !important;
     margin-left: 300px;
-    width: 100%;    
+    width: 100%;   
+    background-color: var(--bg--dashboard) !important; 
 }
-.header_Q
+.header_inactive
 {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    background: var(--primary);
+    background: var(--bg-dashboard);
     justify-content: space-between;    
     padding: 1rem 1.5rem;
     position: fixed;
@@ -18,11 +19,11 @@
     z-index: 100;
     transition: 500ms !important;
 }
-.header_W
+.header_active
 {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    background: var(--primary);
+    background: var(--bg--dashboard);
     justify-content: space-between;    
     padding: 1rem 1.5rem;
     position: fixed;
@@ -65,8 +66,7 @@ main
     margin-top: 92px;
     margin-left: 1rem;
     padding: 2rem 1.5rem;
-    background: var(--primary);
-    opacity: 75%;
+    background-color: var(--bg--dashboard);
     min-height: calc(100vh - 90px);
 }
 .cards 
@@ -80,14 +80,15 @@ main
 {
     display: flex;
     justify-content: center;
-    background: #f0f0f0;
-    padding: 24px !important;
+    background: var(--bg-card);
+    padding: 20px !important;
     border-radius: 16px;   
     border: #fff;
     border-width: 2px;
     border-style: solid;
     align-items: center;
 } 
+
 .recent-grid 
 {
     margin-top: 3.5rem;
@@ -97,7 +98,7 @@ main
 }
 .card 
 {
-    background: #fff !important;
+    background: var(--bg-card);
     grid-row-gap: .5rem;
 }
 .card-header 
