@@ -3,7 +3,7 @@
     transition: 400ms !important;
     margin-left: 300px;
     width: 100%;   
-    background-color: var(--bg--dashboard) !important; 
+    background-color: var(--bg-dashboard) !important;
 }
 .header_inactive
 {
@@ -81,24 +81,24 @@ main
     display: flex;
     justify-content: center;
     background: var(--bg-card);
-    padding: 20px !important;
+    padding: 12px !important;
     border-radius: 16px;   
     border: #fff;
     border-width: 2px;
     border-style: solid;
     align-items: center;
+    justify-content: flex-start;
 } 
 
-.recent-grid 
+.card-grid 
 {
     margin-top: 3.5rem;
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 45% 25% 25% auto;
+    grid-template-columns: 50% 20% 25% auto;
 }
 .card 
 {
-    background: var(--bg-card);
     grid-row-gap: .5rem;
 }
 .card-header 
@@ -152,17 +152,6 @@ main
     margin-right: .5rem;
     color: var(--main-color);
 }
-.customer .card-single 
-{
-   width: 293px;
-   height: 104px;
-}
-.card-anncmnt
-{
-    height: 94px !important;
-    width: 221px !important;
-    padding: 21px !important;       
-}
 .card, 
 .card-header{
     background-color: transparent !important;
@@ -178,6 +167,13 @@ main
     width: 32px;
     box-sizing: border-box;
 }
+
+.label-med{
+    color: var(--text-card-content) !important;
+}
+.label-large{
+    color: var(--text-card-header) !important;
+}
 .bi-brightness-high
 {
     font-size: 1.5rem;
@@ -185,4 +181,44 @@ main
     height: 17.5px;
     width: 17.5px;
     color: var(--accent); 
+}
+.lesson-progress .card-single {
+    height: 94px !important;
+    width: 230px !important; 
+}
+.section-lesson .card-single {
+    width: 293px;
+    height: 104px;
+}
+.content-performance .card-single:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-schedule .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-schedule .card-single{
+   grid-row-gap: .5rem !important;
+}
+.crd-chart{
+    display: grid;
+    justify-content: center !important;
+    background: var(--bg-card);
+    padding: 5px !important;
+    border-radius: 16px;   
+    border: #fff;
+    border-width: 2px;
+    border-style: solid;
+    align-items: center;
+    justify-content: flex-start;
+}
+.crd-single{
+    display: flex;
+    justify-content: space-between;
+}
+.crd-text {
+    margin-left: 1rem;
 }

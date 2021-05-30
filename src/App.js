@@ -8,6 +8,8 @@ import LandingPageFooter from './components/landingpage/LandingPageFooter'
 // dashboard
 import StudentDashboard from './components/dashboard/StudentDashboard'
 import Sidenav from './components/dashboard/Sidenav'
+import TeacherDashboard from './components/dashboard/TeacherDashboard'
+import TeacherSidenav from './components/dashboard/TeacherSidenav'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/main.css'
 import 'bootstrap'
@@ -33,6 +35,13 @@ function App() {
           <input type="checkbox" id="nav-toggle"/>  
             <Sidenav />
             <StudentDashboard />
+          </div>
+        </Route>
+        <Route exact path="/teacher">
+        <div className="row">
+          <input type="checkbox" id="nav-toggle"/>  
+            <TeacherSidenav />
+            <TeacherDashboard />
           </div>
         </Route>
       </Switch>

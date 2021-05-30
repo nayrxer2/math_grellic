@@ -36,12 +36,12 @@
     padding-right: 1rem;  
 }
 .sidebar-menu {
-    margin-top: 4rem;
+    margin-top: 67px;
 }
 .sidebar-menu li 
 {
     width: 100%;
-    margin-bottom: 1.3rem;
+    margin-bottom: .5rem;
     padding-left: .5rem;   
     transition: 500ms !important;
 }
@@ -55,9 +55,8 @@
 }
 .sidebar-menu a.active 
 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     color: var(--accent); 
+    background: linear-gradient(90deg, transparent 98%, var(--accent) 2%);
 }
 .sidebar-menu a span:first-child 
 {
@@ -66,6 +65,12 @@
     height: 17.5px;
     width: 17.5px;
 }
+#nav-toggle:checked + .sidebar .navimg
+{
+   width: 0 !important;
+   height: 0 !important;
+   transition: 500ms;
+} 
 #nav-toggle:checked + .sidebar
 {
     width: 70px;
@@ -166,6 +171,16 @@
         width: calc(100% - 365px) !important;
         left:  365px!important;   
     } 
+    #nav-toggle:checked + .sidebar .navimg {
+        width: 0 !important;
+        height: 0 !important;
+        transition: 500ms;
+    }
+    .navimg {
+        width: 0 !important;
+        height: 0 !important;
+        transition: 500ms;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -175,6 +190,11 @@
     .recent-grid {
         grid-template-columns: 60% 40%;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .navimg {
+        width: 0 !important;
+        height: 0 !important;
+        transition: 500ms;
     }
 }
 @media screen and (max-width: 768px){   
@@ -220,15 +240,6 @@
         justify-content: center; 
         text-align: center;      
     }
-    header h2 span 
-    {
-        text-align: center;
-        padding-right: 0rem;
-    }
-    header h2 
-    {
-        font-size: 1.1rem;
-    }
     .main-dashboard 
     {
         width: 100% !important;
@@ -264,9 +275,33 @@
     #nav-toggle:checked ~ header {
         left: 0rem !important;
     }   
+    #nav-toggle:checked + .sidebar .navimg {
+        width: 0 !important;
+        height: 0 !important;
+        transition: 500ms;
+    }
+    .navimg {
+        width: 0 !important;
+        height: 0 !important;
+        transition: 500ms;
+    }
 }
 @media screen and (max-width: 560px){
     .cards {
         grid-template-columns: 100%;
     }
+    .navimg {
+        width: 0 !important;
+        height: 0 !important;
+        transition: 500ms;
+    }
+}
+
+.navimg {
+    margin-top: 65px;
+    position: static;
+    width: 229px;
+    height: 320.87px;
+    margin-left: 16px;
+    transition: 500ms;
 }

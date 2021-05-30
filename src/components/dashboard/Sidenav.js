@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/dashboard/sidenav.css'
 import logo from '../../images/logo-brand.png' 
+import navImg from '../../icons/stdnt_dshbrd/nav-graphics.png'
 
 function SideNav() {
     return (  
@@ -54,6 +55,7 @@ function SideNav() {
                         </a>
                     </li>
                 </ul>
+                <span className="navimg"><img className="navimg" src={navImg} alt="" /></span>
             </div>
         </div>      
     )
