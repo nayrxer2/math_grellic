@@ -3,14 +3,14 @@ import React from 'react'
 import '../../styles/dashboard/studentdashboard.css'
 import userimg from '../../images/user.jpg'
 import i_math from '../../icons/stdnt_dshbrd/mathematics.png'
-import i_chart from '../../icons/stdnt_dshbrd/chart.png'
+import i_calc from '../../icons/stdnt_dshbrd/calculator.png'
+import i_learn from '../../icons/stdnt_dshbrd/learning.png'
 import i_bar from '../../icons/stdnt_dshbrd/btn-bar.png'
-import i_points from '../../icons/stdnt_dshbrd/points.png'
-import i_ranking from '../../icons/stdnt_dshbrd/ranking.png'
-import i_trophies from '../../icons/stdnt_dshbrd/trophies.png'
+import i_chart from '../../icons/stdnt_dshbrd/chart.png'
 import i_calendar from '../../icons/stdnt_dshbrd/btn-calendar.png'
-import act_pend from '../../icons/stdnt_dshbrd/activities-pending.png'
 
+import act_pend from '../../icons/stdnt_dshbrd/activities-pending.png'
+import {Button} from '../Button'
 
 class TeacherDasboard extends Component {
 
@@ -31,31 +31,36 @@ class TeacherDasboard extends Component {
     render () {
         return (
             <div className="main-dashboard">
-                <header>
-                    <label htmlFor="">
-                        <span><i></i></span>
+               <header className={ this.state.active ? 'header_active' : 'header_inactive'}> 
+                    <label onClick={this.addActiveClass} htmlFor="nav-toggle">
+                        <span><i className="bi bi-list"></i></span>
                     </label>
-                </header>
-                <div className="user-wrapper">
-                    <div>
-                        <h4></h4>
+                    <div className="user-wrapper">
+                        <div>
+                            <h4>John Doe</h4>
+                        </div>
+                        <img src={userimg} alt="" />
                     </div>
-                </div>
-                <div>
-                    <span><i></i></span>
-                    <span>Good Morning, Ma’am Myrhelle!</span>
-                </div>
+                    <div>
+                        <span><i className="bi-brightness-high"></i></span>
+                        <span className="h6-heading">Good Morning, Ma’am Myrhelle!</span>
+                    </div>
+                </header>           
                 <main>
                     <div className="card-grid">
                         <div className="projects">
-
                             <div className="card">
-                                <div className="card-header">
-                                    <div className="search-wrapper">
-                                        <span className="la la-bars"></span>
-                                        <input type="search" placeholder="Search here"/>
+                                <div className="npt-gap">                                    
+                                    <div className="input-wrapper">
+                                        <input type="input" placeholder="Any announcements today?"/>                                   
                                     </div>
-                                    <button>search</button>
+                                    <Button buttonStyle="tertiary">Search</Button>                                      
+                                </div>
+                                <div className="card-header">
+                                    <div>
+                                        <h3>Upcoming Quizzes</h3>
+                                    </div>
+                                    <Button buttonStyle="primary">See all</Button>
                                 </div>
                                 <div className="card-body">
                                     <div className="table-responsive">
@@ -63,13 +68,22 @@ class TeacherDasboard extends Component {
                                             <div className="cards">
                                                 <div className="card-single">                                         
                                                     <div>
-                                                        <span><img className="card-icons" src={i_math}></img></span>
+                                                        <span><img className="card-icons" src={i_learn}></img></span>
                                                     </div>
                                                     <div className="crd-text">
                                                         <span className="label-large">Lesson Title: Subtitle </span>
                                                         <span className="label-med"><br/>Completed Activities</span>    
                                                     </div>
-                                                </div>
+                                                </div>    
+                                                <div className="card-single">                                         
+                                                    <div>
+                                                        <span><img className="card-icons" src={i_calc}></img></span>
+                                                    </div>
+                                                    <div className="crd-text">
+                                                        <span className="label-large">Lesson Title: Subtitle </span>
+                                                        <span className="label-med"><br/>Completed Activities</span>    
+                                                    </div>
+                                                </div>                                               
                                                 <div className="card-single">                                         
                                                     <div>
                                                         <span><img className="card-icons" src={i_math}></img></span>
@@ -78,18 +92,9 @@ class TeacherDasboard extends Component {
                                                         <span className="label-large">Lesson Title: Subtitle </span>
                                                         <span className="label-med"><br/>Completed Activities</span>    
                                                     </div>
-                                                </div>
-                                                <div className="card-single">                                         
-                                                    <div>
-                                                        <span><img className="card-icons" src={i_math}></img></span>
-                                                    </div>
-                                                    <div className="crd-text">
-                                                        <span className="label-large">Lesson Title: Subtitle </span>
-                                                        <span className="label-med"><br/>Completed Activities</span>    
-                                                    </div>
-                                                </div>
-                                            </div>           
-                                        </div> 
+                                                </div>    
+                                            </div>                                     
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="card-body">
@@ -123,9 +128,9 @@ class TeacherDasboard extends Component {
                                             </div>           
                                         </div> 
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div>                               
+                            </div>                           
+                        </div>   
                         <div className="content-performance">
                             <div className="card">
                                 <div className="crd-chart">
@@ -139,7 +144,7 @@ class TeacherDasboard extends Component {
                                         </div>
                                     </div>               
                                     <img className="" src={i_chart} alt="Card image cap"/> 
-                                </div>  
+                                </div>   
                                 <div className="crd-chart">
                                     <div className="crd-single">
                                         <div className="">
@@ -151,9 +156,9 @@ class TeacherDasboard extends Component {
                                         </div>
                                     </div>               
                                     <img className="" src={i_chart} alt="Card image cap"/> 
-                                </div>                                 
+                                </div>                                
                             </div>          
-                        </div>
+                        </div>   
                         <div className="content-schedule">
                             <div className="card">
                                 <div className="card-header">
@@ -171,13 +176,13 @@ class TeacherDasboard extends Component {
                                         </div>   
                                     </div> 
                                     <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
+                                        <div>
+                                             <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
                                         </div>
                                         <div className="card-single">
                                             <div>
@@ -197,7 +202,6 @@ class TeacherDasboard extends Component {
                                                 <span className="label-med"><br/>Completed Activities</span>
                                             </div>
                                         </div>
-                                    
                                 </div>
                                 <div className="card-body">
                                     <div className="card-title">
@@ -205,37 +209,37 @@ class TeacherDasboard extends Component {
                                             <span className="label-med">April 2021</span>
                                         </div>   
                                     </div> 
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
                                         </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
                                         </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
                                         </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>                
-                        </div>
-                    </div>
+                        </div>             
+                    </div>                    
                 </main>
             </div>
         )

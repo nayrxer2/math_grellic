@@ -42,255 +42,282 @@ class StudentDashboard extends Component {
                     <label onClick={this.addActiveClass} htmlFor="nav-toggle">
                         <span><i className="bi bi-list"></i></span>
                     </label>
-                <div className="user-wrapper">
-                    <div>
-                        <h4>John Doe</h4>
+                    <div className="user-wrapper">
+                        <div>
+                            <h4>John Doe</h4>
+                        </div>
+                        <img src={userimg} alt="" />
                     </div>
-                    <img src={userimg} alt="" />
-                </div>
-                <div>
-                    <span><i className="bi-brightness-high"></i></span>
-                    <span className="h6-heading">Good Morning, Mae!</span>
-                </div>
-            </header>
-        <main>         
-            <div className="card-grid">
-                <div className="projects">
-                    <div className="card">
-                        <div className="card-header">
-                            <div>
-                                <h3>Today’s announcement</h3>
-                                <p>Any announcements made by the teacher will be put here to notify the students </p>
-                            </div>
-                        </div>           
-                        <div className="card-body">
-                            <div className="table-responsive">  
-                                <div className="lesson-progress">
+                    <div>
+                        <span><i className="bi-brightness-high"></i></span>
+                        <span className="h6-heading">Good Morning, Mae!</span>
+                    </div>
+                </header>
+            <main>         
+                <div className="card-grid">
+                    <div className="projects">
+                        <div className="card">
+                            <div className="card-header">
+                                <div>
+                                    <h3>Today’s announcement</h3>
+                                    <p>Any announcements made by the teacher will be put here to notify the students </p>
+                                </div>
+                            </div>           
+                            <div className="card-body">
+                                <div className="table-responsive">  
+                                    <div className="lesson-progress">
+                                        <div className="cards">
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={less_avail}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">3 lessons</span>
+                                                    <span className="label-med"><br/>Available Lessons</span>
+                                                </div>
+                                            </div>
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={act_pend}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">2 Activities </span>
+                                                    <span className="label-med"><br/>Pending Activities</span>
+                                                </div>  
+                                            </div>
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={act_comp}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">5 activities </span>
+                                                    <span className="label-med"><br/>Completed Activities</span>                                              
+                                                </div>
+                                            </div>
+                                        </div>   
+
+                                    </div>
+                                </div>  
+                            </div> 
+                        </div> 
+                        <div className="card">
+                            <div className="card-header">
+                                <div>
+                                    <h3>Upcoming Lessons</h3>
+                                </div>
+                                <button>See all <span></span></button>
+                            </div> 
+                            <div className="card-body">
+                                <div className="table-responsive">  
+                                    <div className="section-lesson">
+                                        
                                     <div className="cards">
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={less_avail}></img></span>
+                                            <div className="card-single">                                         
+                                                <div>
+                                                    <span><img className="card-icons" src={i_math}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">Lesson Title: Subtitle </span>
+                                                    <span className="label-med"><br/>Completed Activities</span>    
+                                                </div>
                                             </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">3 lessons</span>
-                                                <span className="label-med"><br/>Available Lessons</span>
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={i_clip}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">Lesson Title: Subtitle </span>
+                                                    <span className="label-med"><br/>Completed Activities</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={i_clip}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">Lesson Title: Subtitle </span>
+                                                    <span className="label-med"><br/>Completed Activities</span> 
+                                                </div>
                                             </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">2 Activities </span>
-                                                <span className="label-med"><br/>Pending Activities</span>
-                                            </div>  
-                                        </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_comp}></img></span>
+                                        </div>  
+                                    </div>
+                                </div>  
+                            </div> 
+                        </div> 
+
+                        <div className="card">
+                            <div className="card-header">
+                                <div>
+                                    <h3>Upcoming Activities</h3>                               
+                                </div>
+                                <button>See all</button>
+                            </div> 
+                            <div className="card-body">
+                                <div className="table-responsive">  
+                                    <div className="section-lesson">
+                                    <div className="cards">
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={i_learn}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">Lesson Title: Subtitle </span>
+                                                    <span className="label-med"><br/>Completed Activities</span>
+                                                </div>
                                             </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">5 activities </span>
-                                                <span className="label-med"><br/>Completed Activities</span>                                              
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={i_calc}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">Lesson Title: Subtitle </span>
+                                                    <span className="label-med"><br/>Completed Activities</span>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div className="card-single">
+                                                <div>
+                                                    <span><img className="card-icons" src={i_learn}></img></span>
+                                                </div>
+                                                <div className="crd-text">
+                                                    <span className="label-large">Lesson Title: Subtitle </span>
+                                                    <span className="label-med"> <br/>Completed Activities</span>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>  
+                            </div>     
+                        </div> 
+                    </div>
+
+                    <div className="content-performance">
+                        <div className="card">
+                            <div className="crd-chart">
+                                <div className="crd-single">
+                                    <div className="">
+                                        <span className="label-large">Lesson Title: Subtitle </span>
+                                        <span className="label-med"><br/>Check our latest development</span>
+                                    </div>
+                                    <div>
+                                        <span><img className="card-icons" src={i_bar}></img></span>
+                                    </div>
+                                </div>               
+                                <img className="" src={i_chart} alt="Card image cap"/> 
+                            </div>
+                            <div className="card-single">
+                                <div>
+                                    <span><img className="card-icons" src={i_ranking}></img></span>
+                                </div>
+                                <div className="crd-text">
+                                    <span className="label-large">1st</span>
+                                    <span className="label-med"> <br/>Current ranking</span>
+                                </div>
+                            </div>
+                            <div className="card-single">
+                                <div>
+                                    <span><img className="card-icons" src={i_points}></img></span>
+                                </div>
+                                <div className="crd-text">
+                                    <span className="label-large">245 points</span>
+                                    <span className="label-med"><br/>Points earned</span>
+                                </div>
+                            </div>
+                            <div className="card-single">
+                                <div>
+                                    <span><img className="card-icons" src={i_trophies}></img></span>
+                                </div>
+                                <div className="crd-text">
+                                    <span className="label-large">12 trophies</span>
+                                    <span className="label-med"><br/>Trophies earned</span>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+
+                    <div className="content-schedule">
+                        <div className="card">
+                            <div className="card-header">
+                                <div>
+                                    <span className="label-large">Schedule</span>
+                                </div>   
+                                <div>
+                                    <span><img src={i_calendar} alt="" /></span> 
+                                </div>   
+                            </div> 
+                            <div className="card-body">
+                                <div className="card-title">
+                                    <div>
+                                        <span className="label-med">April 2021</span>
                                     </div>   
-
-                                </div>
-                            </div>  
-                        </div> 
-                    </div> 
-                    <div className="card">
-                        <div className="card-header">
-                            <div>
-                                <h3>Upcoming Lessons</h3>
-                            </div>
-                            <button>See all <span></span></button>
-                        </div> 
-                        <div className="card-body">
-                            <div className="table-responsive">  
-                                <div className="section-lesson">
-                                       
-                                <div className="cards">
-                                        <div className="card-single">                                         
-                                            <div>
-                                                <span><img className="card-icons" src={i_math}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>    
-                                            </div>
-                                        </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={i_clip}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
-                                        </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={i_clip}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span> 
-                                            </div>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>  
-                        </div> 
-                    </div> 
-
-                    <div className="card">
-                        <div className="card-header">
-                            <div>
-                                <h3>Upcoming Activities</h3>                               
-                            </div>
-                            <button>See all</button>
-                        </div> 
-                        <div className="card-body">
-                            <div className="table-responsive">  
-                                <div className="section-lesson">
-                                <div className="cards">
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={i_learn}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
-                                        </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={i_calc}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
-                                        </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={i_learn}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"> <br/>Completed Activities</span>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>  
-                        </div>     
-                    </div> 
-                </div>
-
-                <div className="content-performance">
-                    <div className="card">
-                        <div className="crd-chart">
-                            <div className="crd-single">
-                                <div className="">
-                                    <span className="label-large">Lesson Title: Subtitle </span>
-                                    <span className="label-med"><br/>Check our latest development</span>
-                                </div>
-                                <div>
-                                    <span><img className="card-icons" src={i_bar}></img></span>
-                                </div>
-                            </div>               
-                            <img className="" src={i_chart} alt="Card image cap"/> 
-                        </div>
-                        <div className="card-single">
-                            <div>
-                                <span><img className="card-icons" src={i_ranking}></img></span>
-                            </div>
-                            <div className="crd-text">
-                                <span className="label-large">1st</span>
-                                <span className="label-med"> <br/>Current ranking</span>
-                            </div>
-                        </div>
-                        <div className="card-single">
-                            <div>
-                                <span><img className="card-icons" src={i_points}></img></span>
-                            </div>
-                            <div className="crd-text">
-                                <span className="label-large">245 points</span>
-                                <span className="label-med"><br/>Points earned</span>
-                            </div>
-                        </div>
-                        <div className="card-single">
-                            <div>
-                                <span><img className="card-icons" src={i_trophies}></img></span>
-                            </div>
-                            <div className="crd-text">
-                                <span className="label-large">12 trophies</span>
-                                <span className="label-med"><br/>Trophies earned</span>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-
-                <div className="content-schedule">
-                    <div className="card">
-                        <div className="card-header">
-                            <div>
-                                <span className="label-large">Schedule</span>
-                            </div>   
-                            <div>
-                                <span><img src={i_calendar} alt="" /></span> 
-                            </div>   
-                        </div> 
-                        <div className="card-body">
-                            <div className="card-title">
-                                <div>
-                                    <span className="label-med">April 2021</span>
-                                </div>   
-                            </div> 
-                               
-                        </div>
-                        <div className="card-body">
-                            <div className="card-title">
-                                <div>
-                                    <span className="label-med">April 2021</span>
-                                </div>   
-                            </div> 
+                                </div> 
                                 <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div className="card-body">
+                                <div className="card-title">
                                     <div>
-                                        <span><img className="card-icons" src={act_pend}></img></span>
+                                        <span className="label-med">April 2021</span>
+                                    </div>   
+                                </div> 
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
                                     </div>
-                                    <div className="crd-text">
-                                        <span className="label-large">Lesson Title: Subtitle </span>
-                                        <span className="label-med"><br/>Completed Activities</span>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="card-single">
-                                    <div>
-                                        <span><img className="card-icons" src={act_pend}></img></span>
+                                    <div className="card-single">
+                                        <div>
+                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
                                     </div>
-                                    <div className="crd-text">
-                                        <span className="label-large">Lesson Title: Subtitle </span>
-                                        <span className="label-med"><br/>Completed Activities</span>
-                                    </div>
-                                </div>
-                                <div className="card-single">
-                                    <div>
-                                        <span><img className="card-icons" src={act_pend}></img></span>
-                                    </div>
-                                    <div className="crd-text">
-                                        <span className="label-large">Lesson Title: Subtitle </span>
-                                        <span className="label-med"><br/>Completed Activities</span>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>                
+                            </div>
+                        </div>                
+                    </div>
                 </div>
-            </div>
-        </main>
-    </div>
+            </main>
+        </div>
         )
     }
        

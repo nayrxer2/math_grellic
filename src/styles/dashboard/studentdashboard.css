@@ -110,15 +110,6 @@ main
     background-color: #fff;
     padding: 1rem 0 0 0 !important;
 }
-.card-header button 
-{
-    background: #fff;
-    border-radius: 10px;
-    color: var(--secondary) !important;
-    font-size: .8rem;
-    padding: .5rem 1rem;
-    border: none;
-}
 .img-cstmr
 {
     width: 40px;
@@ -221,4 +212,29 @@ main
 }
 .crd-text {
     margin-left: 1rem;
+}
+.input-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+.input-wrapper span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+}
+.input-wrapper input {
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.npt-gap {
+    grid-gap: 0 !important;
+    display: flex !important;
 }
