@@ -210,6 +210,11 @@ main
     display: flex;
     justify-content: space-between;
 }
+.crd-lesson{
+       grid-template-columns: repeat(2, 2fr) !important;
+       grid-gap: .5rem;
+       height: 400px;
+}
 .crd-text {
     margin-left: 1rem;
 }
@@ -237,4 +242,11 @@ main
 .npt-gap {
     grid-gap: 0 !important;
     display: flex !important;
+}
+.crd-image {    
+    padding: 2px !important;
+}
+.crd-schedule .card-single{
+    margin-top: .8rem;
+    min-height: 7rem !important;
 }

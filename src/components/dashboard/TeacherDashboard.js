@@ -8,6 +8,7 @@ import i_learn from '../../icons/stdnt_dshbrd/learning.png'
 import i_bar from '../../icons/stdnt_dshbrd/btn-bar.png'
 import i_chart from '../../icons/stdnt_dshbrd/chart.png'
 import i_calendar from '../../icons/stdnt_dshbrd/btn-calendar.png'
+import crd_img from "../../images/card-image.png"
 
 import act_pend from '../../icons/stdnt_dshbrd/activities-pending.png'
 import {Button} from '../Button'
@@ -100,30 +101,46 @@ class TeacherDasboard extends Component {
                                 <div className="card-body">
                                     <div className="table-responsive">
                                         <div className="section-lesson">
-                                            <div className="cards">
-                                                <div className="crd-chart">
+                                            <div className="cards crd-lesson">
+                                                <div className="crd-chart">                                                           
+                                                    <img className="crd-image" src={crd_img} alt="Card image cap"/> 
                                                     <div className="crd-single">
                                                         <div className="">
                                                             <span className="label-large">Lesson Title: Subtitle </span>
                                                             <span className="label-med"><br/>Check our latest development</span>
                                                         </div>
-                                                        <div>
-                                                            <span><img className="card-icons" src={i_bar}></img></span>
-                                                        </div>
-                                                    </div>               
-                                                    <img className="" src={i_chart} alt="Card image cap"/> 
+                                                    </div>        
                                                 </div>  
                                                 <div className="crd-chart">
-                                                    <div className="crd-single">
+                                                    <div className="crd-single">    
                                                         <div className="">
                                                             <span className="label-large">Lesson Title: Subtitle </span>
-                                                            <span className="label-med"><br/>Check our latest development</span>
                                                         </div>
+                                                    </div>  
+                                                    <div className="crd-single">
                                                         <div>
                                                             <span><img className="card-icons" src={i_bar}></img></span>
                                                         </div>
-                                                    </div>               
-                                                    <img className="" src={i_chart} alt="Card image cap"/> 
+                                                        <div className="">
+                                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                                        </div>
+                                                    </div>    
+                                                    <div className="crd-single">
+                                                        <div>
+                                                            <span><img className="card-icons" src={i_bar}></img></span>
+                                                        </div>
+                                                        <div className="">
+                                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                                        </div>
+                                                    </div>  
+                                                    <div className="crd-single">
+                                                        <div>
+                                                            <span><img className="card-icons" src={i_bar}></img></span>
+                                                        </div>
+                                                        <div className="">
+                                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                                        </div>
+                                                    </div>  
                                                 </div>         
                                             </div>           
                                         </div> 
@@ -132,7 +149,7 @@ class TeacherDasboard extends Component {
                             </div>                           
                         </div>   
                         <div className="content-performance">
-                            <div className="card">
+                            <div className="card crd-lesson">
                                 <div className="crd-chart">
                                     <div className="crd-single">
                                         <div className="">
@@ -169,7 +186,7 @@ class TeacherDasboard extends Component {
                                         <span><img src={i_calendar} alt="" /></span> 
                                     </div>   
                                 </div> 
-                                <div className="card-body">
+                                <div className="card-body  crd-schedule">
                                     <div className="card-title">
                                         <div>
                                             <span className="label-med">April 2021</span>
@@ -203,7 +220,7 @@ class TeacherDasboard extends Component {
                                             </div>
                                         </div>
                                 </div>
-                                <div className="card-body">
+                                <div className="card-body crd-schedule">
                                     <div className="card-title">
                                         <div>
                                             <span className="label-med">April 2021</span>
