@@ -9,6 +9,7 @@ import i_bar from '../../icons/stdnt_dshbrd/btn-bar.png'
 import i_chart from '../../icons/stdnt_dshbrd/chart.png'
 import i_calendar from '../../icons/stdnt_dshbrd/btn-calendar.png'
 import crd_img from "../../images/card-image.png"
+import i_lock from '../../icons/stdnt_dshbrd/lock.png'
 
 import act_pend from '../../icons/stdnt_dshbrd/activities-pending.png'
 import {Button} from '../Button'
@@ -28,7 +29,6 @@ class TeacherDasboard extends Component {
             active: !currentState
         });
     };
-    
     render () {
         return (
             <div className="main-dashboard">
@@ -38,13 +38,13 @@ class TeacherDasboard extends Component {
                     </label>
                     <div className="user-wrapper">
                         <div>
-                            <h4>John Doe</h4>
+                            <p className="label-med">23 April 2021, Friday</p>
                         </div>
                         <img src={userimg} alt="" />
                     </div>
                     <div>
                         <span><i className="bi-brightness-high"></i></span>
-                        <span className="h6-heading">Good Morning, Ma’am Myrhelle!</span>
+                        <span className="h6-heading h6">Good Morning, Ma’am Myrhelle!</span>
                     </div>
                 </header>           
                 <main>
@@ -59,7 +59,7 @@ class TeacherDasboard extends Component {
                                 </div>
                                 <div className="card-header">
                                     <div>
-                                        <h3>Upcoming Quizzes</h3>
+                                        <p className="label-large">Upcoming Quizzes</p> 
                                     </div>
                                     <Button buttonStyle="primary">See all</Button>
                                 </div>
@@ -83,7 +83,7 @@ class TeacherDasboard extends Component {
                                                     <div className="crd-text">
                                                         <span className="label-large">Lesson Title: Subtitle </span>
                                                         <span className="label-med"><br/>Completed Activities</span>    
-                                                    </div>
+                                                    </div>                                                   
                                                 </div>                                               
                                                 <div className="card-single">                                         
                                                     <div>
@@ -101,7 +101,8 @@ class TeacherDasboard extends Component {
                                 <div className="card-body">
                                     <div className="table-responsive">
                                         <div className="section-lesson">
-                                            <div className="cards crd-lesson">
+                                            <div className="cards crd-lesson">     
+
                                                 <div className="crd-chart">                                                           
                                                     <img className="crd-image" src={crd_img} alt="Card image cap"/> 
                                                     <div className="crd-single">
@@ -111,36 +112,70 @@ class TeacherDasboard extends Component {
                                                         </div>
                                                     </div>        
                                                 </div>  
+
                                                 <div className="crd-chart">
-                                                    <div className="crd-single">    
-                                                        <div className="">
-                                                            <span className="label-large">Lesson Title: Subtitle </span>
-                                                        </div>
-                                                    </div>  
-                                                    <div className="crd-single">
-                                                        <div>
-                                                            <span><img className="card-icons" src={i_bar}></img></span>
-                                                        </div>
-                                                        <div className="">
-                                                            <span className="label-large">Lesson Title: Subtitle </span>
-                                                        </div>
-                                                    </div>    
-                                                    <div className="crd-single">
-                                                        <div>
-                                                            <span><img className="card-icons" src={i_bar}></img></span>
-                                                        </div>
-                                                        <div className="">
-                                                            <span className="label-large">Lesson Title: Subtitle </span>
-                                                        </div>
-                                                    </div>  
-                                                    <div className="crd-single">
-                                                        <div>
-                                                            <span><img className="card-icons" src={i_bar}></img></span>
-                                                        </div>
-                                                        <div className="">
-                                                            <span className="label-large">Lesson Title: Subtitle </span>
-                                                        </div>
-                                                    </div>  
+                                                        <div className="crd-single">
+                                                            <p className="label-large">New Videos</p>   
+                                                        </div>   
+                                                        <table>                                                                 
+                                                            <tbody>
+                                                                <tr>
+                                                                    <div className="card-icons">
+                                                                            <i className="bi bi-play-circle"></i>
+                                                                    </div>
+                                                                    <td> 
+                                                                        <span className="label-large">Lesson 2: Lesson Title </span><br/>
+                                                                        <span className="label-med">Duration: 10 mins</span>
+                                                                    </td>  
+                                                                    <td>
+                                                                        
+                                                                    </td>                                                                
+                                                                </tr>
+                                                                <tr>                                                           
+                                                                    <div className="card-icons">
+                                                                            <i className="bi bi-play-circle"></i>
+                                                                    </div>  
+                                                                    <td> 
+                                                                        <span className="label-large">Lesson 2: Lesson Title </span><br/>
+                                                                        <span className="label-med">Duration: 10 mins</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="status-icon">
+                                                                            <i className="bi bi-lock"></i>
+                                                                        </div> 
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <div className="card-icons">
+                                                                            <i className="bi bi-play-circle"></i>
+                                                                    </div>
+                                                                    <td> 
+                                                                        <span className="label-large">Lesson 2: Lesson Title </span><br/>
+                                                                        <span className="label-med">Duration: 10 mins</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="status-icon">
+                                                                            <i className="bi bi-lock"></i>
+                                                                        </div> 
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <div className="card-icons">
+                                                                            <i className="bi bi-play-circle"></i>
+                                                                    </div>
+                                                                    <td> 
+                                                                        <span className="label-large">Lesson 2: Lesson Title </span><br/>
+                                                                        <span className="label-med">Duration: 10 mins</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="status-icon">
+                                                                            <i className="bi bi-lock"></i>
+                                                                        </div> 
+                                                                    </td>
+                                                                </tr>                                                                                                                                                                                                                         
+                                                            </tbody>
+                                                        </table>
+                                                                                                 
                                                 </div>         
                                             </div>           
                                         </div> 
@@ -160,7 +195,7 @@ class TeacherDasboard extends Component {
                                             <span><img className="card-icons" src={i_bar}></img></span>
                                         </div>
                                     </div>               
-                                    <img className="" src={i_chart} alt="Card image cap"/> 
+                                    <img className="crd-image" src={i_chart} alt="Card image cap"/> 
                                 </div>   
                                 <div className="crd-chart">
                                     <div className="crd-single">
@@ -172,7 +207,7 @@ class TeacherDasboard extends Component {
                                             <span><img className="card-icons" src={i_bar}></img></span>
                                         </div>
                                     </div>               
-                                    <img className="" src={i_chart} alt="Card image cap"/> 
+                                    <img className="crd-image" src={i_chart} alt="Card image cap"/> 
                                 </div>                                
                             </div>          
                         </div>   
@@ -187,38 +222,51 @@ class TeacherDasboard extends Component {
                                     </div>   
                                 </div> 
                                 <div className="card-body  crd-schedule">
-                                    <div className="card-title">
+                                <div className="card-title">
                                         <div>
                                             <span className="label-med">April 2021</span>
                                         </div>   
                                     </div> 
                                     <div className="card-single">
-                                        <div>
-                                             <span><img className="card-icons" src={act_pend}></img></span>
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>07</span> 
                                         </div>
                                         <div className="crd-text">
                                             <span className="label-large">Lesson Title: Subtitle </span>
                                             <span className="label-med"><br/>Completed Activities</span>
                                         </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>14</span> 
                                         </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>                                          
                                         </div>
-                                        <div className="card-single">
-                                            <div>
-                                                <span><img className="card-icons" src={act_pend}></img></span>
-                                            </div>
-                                            <div className="crd-text">
-                                                <span className="label-large">Lesson Title: Subtitle </span>
-                                                <span className="label-med"><br/>Completed Activities</span>
-                                            </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>21</span> 
                                         </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>                                          
+                                        </div>
+                                    </div>
+                                    <div className="card-single">
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>28</span> 
+                                        </div>
+                                        <div className="crd-text">
+                                            <span className="label-large">Lesson Title: Subtitle </span>
+                                            <span className="label-med"><br/>Completed Activities</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="card-body crd-schedule">
                                     <div className="card-title">
@@ -227,8 +275,9 @@ class TeacherDasboard extends Component {
                                         </div>   
                                     </div> 
                                     <div className="card-single">
-                                        <div>
-                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>07</span> 
                                         </div>
                                         <div className="crd-text">
                                             <span className="label-large">Lesson Title: Subtitle </span>
@@ -236,17 +285,19 @@ class TeacherDasboard extends Component {
                                         </div>
                                     </div>
                                     <div className="card-single">
-                                        <div>
-                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>14</span> 
                                         </div>
                                         <div className="crd-text">
                                             <span className="label-large">Lesson Title: Subtitle </span>
-                                            <span className="label-med"><br/>Completed Activities</span>
+                                            <span className="label-med"><br/>Completed Activities</span>                                           
                                         </div>
                                     </div>
                                     <div className="card-single">
-                                        <div>
-                                            <span><img className="card-icons" src={act_pend}></img></span>
+                                        <div className="date-header">
+                                            <span className="label-med">Wed</span>
+                                            <span className="label-large"><br/>21</span> 
                                         </div>
                                         <div className="crd-text">
                                             <span className="label-large">Lesson Title: Subtitle </span>

@@ -17,6 +17,8 @@ import i_trophy from '../../icons/stdnt_dshbrd/trophy.png'
 import i_chart from '../../icons/stdnt_dshbrd/chart.png'
 import i_bar from '../../icons/stdnt_dshbrd/btn-bar.png'
 import i_calendar from '../../icons/stdnt_dshbrd/btn-calendar.png'
+import q_mark from '../../icons/stdnt_dshbrd/Quote-Mark.png'
+import {Button} from '../Button'
 
 class StudentDashboard extends Component {
 
@@ -44,7 +46,7 @@ class StudentDashboard extends Component {
                     </label>
                     <div className="user-wrapper">
                         <div>
-                            <h4>John Doe</h4>
+                            <p className="label-med">23 April 2021, Friday</p>
                         </div>
                         <img src={userimg} alt="" />
                     </div>
@@ -57,10 +59,11 @@ class StudentDashboard extends Component {
                 <div className="card-grid">
                     <div className="projects">
                         <div className="card">
-                            <div className="card-header">
-                                <div>
-                                    <h3>Today’s announcement</h3>
-                                    <p>Any announcements made by the teacher will be put here to notify the students </p>
+                            <div className="anncment-header"> 
+                                <img className="qoute-mark" src={q_mark} alt="" />  
+                                <div className="">            
+                                    <p className="label-large">Today’s announcement</p>
+                                    <p className="label-med">Any announcements made by the teacher will be put here to notify the students </p>
                                 </div>
                             </div>           
                             <div className="card-body">
@@ -103,9 +106,9 @@ class StudentDashboard extends Component {
                         <div className="card">
                             <div className="card-header">
                                 <div>
-                                    <h3>Upcoming Lessons</h3>
+                                    <p className="label-large">Upcoming Lessons</p>
                                 </div>
-                                <button>See all <span></span></button>
+                                <Button buttonStyle="primary">See all</Button>
                             </div> 
                             <div className="card-body">
                                 <div className="table-responsive">  
@@ -148,9 +151,9 @@ class StudentDashboard extends Component {
                         <div className="card">
                             <div className="card-header">
                                 <div>
-                                    <h3>Upcoming Activities</h3>                               
+                                    <p className="label-large">Upcoming Activities</p>                            
                                 </div>
-                                <button>See all</button>
+                                <Button buttonStyle="primary">See all</Button>
                             </div> 
                             <div className="card-body">
                                 <div className="table-responsive">  
@@ -202,7 +205,7 @@ class StudentDashboard extends Component {
                                         <span><img className="card-icons" src={i_bar}></img></span>
                                     </div>
                                 </div>               
-                                <img className="" src={i_chart} alt="Card image cap"/> 
+                                <img className="crd-image" src={i_chart} alt="Card image cap"/> 
                             </div>
                             <div className="card-single">
                                 <div>
@@ -234,7 +237,7 @@ class StudentDashboard extends Component {
                         </div>          
                     </div>
 
-                    <div className="content-schedule">
+                    <div className="content-schedule crd-schedule">
                         <div className="card">
                             <div className="card-header">
                                 <div>

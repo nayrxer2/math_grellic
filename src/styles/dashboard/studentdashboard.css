@@ -50,8 +50,8 @@ header label span
 }
 .user-wrapper img 
 {
-    height: 60px;
-    width: 60px;
+    height: 48px;
+    width: 48px;
     border-radius: 15%;
     margin-left: 1rem;
 }
@@ -157,6 +157,8 @@ main
     height: 32px;
     width: 32px;
     box-sizing: border-box;
+    font-size: 2em;
+    justify-self: center;
 }
 
 .label-med{
@@ -195,11 +197,11 @@ main
    grid-row-gap: .5rem !important;
 }
 .crd-chart{
-    display: grid;
+    /* display: grid; */
     justify-content: center !important;
     background: var(--bg-card);
     padding: 5px !important;
-    border-radius: 16px;   
+    border-radius: 16px !important;   
     border: #fff;
     border-width: 2px;
     border-style: solid;
@@ -245,8 +247,59 @@ main
 }
 .crd-image {    
     padding: 2px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 .crd-schedule .card-single{
     margin-top: .8rem;
     min-height: 7rem !important;
+}
+
+.h6 {
+    color: var(--accent);
+}
+.anncment-header {
+    margin-top: 1rem ;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0 !important;   
+}
+.qoute-mark {
+    margin-top: -3rem;
+    margin-right: 1rem !important;
+}
+table {
+    border-collapse: collapse;
+    width: 100% !important;
+}
+.img-cstmr{
+    width: 40px;
+    height: 40px;
+}
+
+thead tr {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+td {
+    padding: .5rem;   
+}
+td .status-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%; 
+    margin-right: 1rem;
+}
+tr td:last-child {
+    display: flex;
+    align-items: center;
+}
+.projects {
+    padding: 12px 12px 12px 12px !important;
+}
+.card-single div:first-child {
+    color: var(--accent) !important;
 }
