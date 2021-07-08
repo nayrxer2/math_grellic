@@ -6,10 +6,10 @@ import LandingPageCTA from './components/landingpage/LandingPageCTA'
 import LandingSectionFeatures from './components/landingpage/LandingSectionFeatures'
 import LandingPageFooter from './components/landingpage/LandingPageFooter'
 // dashboard
-import StudentDashboard from './components/dashboard/StudentDashboard'
-import Sidenav from './components/dashboard/Sidenav'
-import TeacherDashboard from './components/dashboard/TeacherDashboard'
-import TeacherSidenav from './components/dashboard/TeacherSidenav'
+import StudentDashboard from './components/dashboard/studentdashboard/Dashboard'
+import StudentSideNav from './components/dashboard/studentdashboard/Sidenav'
+import TeacherDashboard from './components/dashboard/teacherdashboard/Dashboard'
+import TeacherSidenav from './components/dashboard/teacherdashboard/Sidenav'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/main.css'
 import 'bootstrap'
@@ -33,7 +33,7 @@ function App() {
         <Route exact path="/student">
           <div className="row">
           <input type="checkbox" id="nav-toggle"/>  
-            <Sidenav />
+            <StudentSideNav />
             <StudentDashboard />
           </div>
         </Route>

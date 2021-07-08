@@ -1,9 +1,9 @@
 import React from 'react'
-import '../../styles/dashboard/sidenav.css'
-import logo from '../../images/logo-brand.png' 
-import navImg from '../../icons/stdnt_dshbrd/nav-graphics.png'
+import '../../../styles/dashboard/sidenav.css'
+import logo from '../../../images/logo-brand.png' 
+import navimg from '../../../icons/stdnt_dshbrd/nav-graphics.png'
 
-function SideNav() {
+function StudentSideNav() {
     return (  
         <div className="sidebar"> 
             <div className="sidebar-brand">
@@ -55,10 +55,10 @@ function SideNav() {
                         </a>
                     </li>
                 </ul>
-                <span className="navimg"><img className="navimg" src={navImg} alt="" /></span>
+                <span className="nav-img"><img className="nav-img" src={navimg} alt="" /></span>
             </div>
         </div>      
     )
 }
 
-export default SideNav
+export default StudentSideNav

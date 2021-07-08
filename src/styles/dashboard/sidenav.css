@@ -65,7 +65,7 @@
     height: 17.5px;
     width: 17.5px;
 }
-#nav-toggle:checked + .sidebar .navimg
+#nav-toggle:checked + .sidebar .nav-img
 {
    width: 0 !important;
    height: 0 !important;
@@ -101,12 +101,12 @@
      width: 100%;
      transition: 500ms !important;
  } 
- .header_inactive
+ .inactive-header
 {   
     width: calc(100% - 301px) !important;
     left: 301px !important;  
 }
-.header_active
+.active-header
 {   
     width: calc(100% - 70px) !important;
     left: 70px !important;   
@@ -161,22 +161,22 @@
     #nav-toggle:checked + .sidebar li a span:last-child {
         display: inline !important;
     }
-    .header_inactive
+    .inactive-header
     {   
         width: calc(100% - 81px) !important;
         left: 81px !important;  
     }
-    .header_active
+    .active-header
     {   
         width: calc(100% - 365px) !important;
         left:  365px!important;   
     } 
-    #nav-toggle:checked + .sidebar .navimg {
+    #nav-toggle:checked + .sidebar .nav-img {
         width: 0 !important;
         height: 0 !important;
         transition: 500ms;
     }
-    .navimg {
+    .nav-img {
         width: 0 !important;
         height: 0 !important;
         transition: 500ms;
@@ -186,12 +186,12 @@
 @media screen and (max-width: 900px){
     .cards {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .recent-grid {
+    }    
+    .card-grid {
         grid-template-columns: 60% 40%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .navimg {
+    .nav-img {
         width: 0 !important;
         height: 0 !important;
         transition: 500ms;
@@ -207,7 +207,7 @@
     {
         grid-template-columns: repeat(2, 1fr);
     }
-    .recent-grid 
+    .card-grid 
     {
         grid-template-columns: 100%;
         grid-template-columns: repeat(1, 1fr);
@@ -275,12 +275,12 @@
     #nav-toggle:checked ~ header {
         left: 0rem !important;
     }   
-    #nav-toggle:checked + .sidebar .navimg {
+    #nav-toggle:checked + .sidebar .nav-img {
         width: 0 !important;
         height: 0 !important;
         transition: 500ms;
     }
-    .navimg {
+    .nav-img {
         width: 0 !important;
         height: 0 !important;
         transition: 500ms;
@@ -290,14 +290,14 @@
     .cards {
         grid-template-columns: 100%;
     }
-    .navimg {
+    .nav-img {
         width: 0 !important;
         height: 0 !important;
         transition: 500ms;
     }
 }
 
-.navimg {
+.nav-img {
     margin-top: 65px;
     position: static;
     width: 229px;

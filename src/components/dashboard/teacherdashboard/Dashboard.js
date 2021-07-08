@@ -1,20 +1,20 @@
 import { Component } from 'react'
 import React from 'react'
-import '../../styles/dashboard/studentdashboard.css'
-import userimg from '../../images/user.jpg'
-import i_math from '../../icons/stdnt_dshbrd/mathematics.png'
-import i_calc from '../../icons/stdnt_dshbrd/calculator.png'
-import i_learn from '../../icons/stdnt_dshbrd/learning.png'
-import i_bar from '../../icons/stdnt_dshbrd/btn-bar.png'
-import i_chart from '../../icons/stdnt_dshbrd/chart.png'
-import i_calendar from '../../icons/stdnt_dshbrd/btn-calendar.png'
-import crd_img from "../../images/card-image.png"
-import i_lock from '../../icons/stdnt_dshbrd/lock.png'
+import '../../../styles/dashboard/dashboard.css'
+import userimg from '../../../images/user.jpg'
+import i_math from '../../../icons/stdnt_dshbrd/mathematics.png'
+import i_calc from '../../../icons/stdnt_dshbrd/calculator.png'
+import i_learn from '../../../icons/stdnt_dshbrd/learning.png'
+import i_bar from '../../../icons/stdnt_dshbrd/btn-bar.png'
+import i_chart from '../../../icons/stdnt_dshbrd/chart.png'
+import i_calendar from '../../../icons/stdnt_dshbrd/btn-calendar.png'
+import crd_img from "../../../images/card-image.png"
+import i_lock from '../../../icons/stdnt_dshbrd/lock.png'
 
-import act_pend from '../../icons/stdnt_dshbrd/activities-pending.png'
-import {Button} from '../Button'
+import act_pend from '../../../icons/stdnt_dshbrd/activities-pending.png'
+import {Button} from '../../Button'
 
-class TeacherDasboard extends Component {
+class Dasboard extends Component {
 
     constructor(props) {
         super(props);
@@ -32,7 +32,7 @@ class TeacherDasboard extends Component {
     render () {
         return (
             <div className="main-dashboard">
-               <header className={ this.state.active ? 'header_active' : 'header_inactive'}> 
+               <header className={ this.state.active ? 'active-header' : 'inactive-header'}> 
                     <label onClick={this.addActiveClass} htmlFor="nav-toggle">
                         <span><i className="bi bi-list"></i></span>
                     </label>
@@ -314,5 +314,5 @@ class TeacherDasboard extends Component {
     }
 }
 
-export default TeacherDasboard
+export default Dasboard
 

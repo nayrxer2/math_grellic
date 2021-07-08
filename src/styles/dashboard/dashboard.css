@@ -5,7 +5,7 @@
     width: 100%;   
     background-color: var(--bg-dashboard) !important;
 }
-.header_inactive
+.inactive-header
 {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
@@ -19,7 +19,7 @@
     z-index: 100;
     transition: 500ms !important;
 }
-.header_active
+.active-header
 {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);

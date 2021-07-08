@@ -1,26 +1,26 @@
-import userimg from '../../images/user.jpg'
-import '../../styles/dashboard/studentdashboard.css'
-import less_avail from '../../icons/stdnt_dshbrd/lessons-availbale.png'
-import act_comp from '../../icons/stdnt_dshbrd/activities-completed.png'
-import act_pend from '../../icons/stdnt_dshbrd/activities-pending.png'
+import userimg from '../../../images/user.jpg'
+import '../../../styles/dashboard/dashboard.css'
+import less_avail from '../../../icons/stdnt_dshbrd/lessons-availbale.png'
+import act_comp from '../../../icons/stdnt_dshbrd/activities-completed.png'
+import act_pend from '../../../icons/stdnt_dshbrd/activities-pending.png'
 import { Component } from 'react'
-import i_pencil from '../../icons/stdnt_dshbrd/pencil.png'
-import i_calc from '../../icons/stdnt_dshbrd/calculator.png'
-import i_clip from'../../icons/stdnt_dshbrd/clipboard.png'
-import i_learn from '../../icons/stdnt_dshbrd/learning.png'
-import i_math from '../../icons/stdnt_dshbrd/mathematics.png'
-import i_online from '../../icons/stdnt_dshbrd/online-learning.png'
-import i_points from '../../icons/stdnt_dshbrd/points.png'
-import i_ranking from '../../icons/stdnt_dshbrd/ranking.png'
-import i_trophies from '../../icons/stdnt_dshbrd/trophies.png'
-import i_trophy from '../../icons/stdnt_dshbrd/trophy.png'
-import i_chart from '../../icons/stdnt_dshbrd/chart.png'
-import i_bar from '../../icons/stdnt_dshbrd/btn-bar.png'
-import i_calendar from '../../icons/stdnt_dshbrd/btn-calendar.png'
-import q_mark from '../../icons/stdnt_dshbrd/Quote-Mark.png'
-import {Button} from '../Button'
+import i_pencil from '../../../icons/stdnt_dshbrd/pencil.png'
+import i_calc from '../../../icons/stdnt_dshbrd/calculator.png'
+import i_clip from'../../../icons/stdnt_dshbrd/clipboard.png'
+import i_learn from '../../../icons/stdnt_dshbrd/learning.png'
+import i_math from '../../../icons/stdnt_dshbrd/mathematics.png'
+import i_online from '../../../icons/stdnt_dshbrd/online-learning.png'
+import i_points from '../../../icons/stdnt_dshbrd/points.png'
+import i_ranking from '../../../icons/stdnt_dshbrd/ranking.png'
+import i_trophies from '../../../icons/stdnt_dshbrd/trophies.png'
+import i_trophy from '../../../icons/stdnt_dshbrd/trophy.png'
+import i_chart from '../../../icons/stdnt_dshbrd/chart.png'
+import i_bar from '../../../icons/stdnt_dshbrd/btn-bar.png'
+import i_calendar from '../../../icons/stdnt_dshbrd/btn-calendar.png'
+import q_mark from '../../../icons/stdnt_dshbrd/Quote-Mark.png'
+import {Button} from '../../Button'
 
-class StudentDashboard extends Component {
+class Dashboard extends Component {
 
     constructor(props) {
         super(props);
@@ -40,7 +40,7 @@ class StudentDashboard extends Component {
     render () {
         return  ( 
             <div className="main-dashboard">
-                <header className={ this.state.active ? 'header_active' : 'header_inactive'}> 
+                <header className={ this.state.active ? 'active-header' : 'inactive-header'}> 
                     <label onClick={this.addActiveClass} htmlFor="nav-toggle">
                         <span><i className="bi bi-list"></i></span>
                     </label>
@@ -325,4 +325,4 @@ class StudentDashboard extends Component {
     }
        
 }    
-export default StudentDashboard
+export default Dashboard
