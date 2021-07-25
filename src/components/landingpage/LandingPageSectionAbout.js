@@ -19,7 +19,7 @@ export default function LandingPageSectionAbout() {
             </div>
           </div>
         <div className="container-fluid row">
-        <div className="h2-heading text-high mb-4">Why <span className="text-accent">choose us?</span></div> 
+        <div className="h2-heading text-high mb-4">Why choose us?</div> 
         <div className="row card-container">
           <div className="card-body col-4">
               <div className="border rounded grid-item-box border-light col-sm-auto col-xs-auto">

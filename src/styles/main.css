@@ -27,6 +27,12 @@ body{
     --bg-light: #FFF;
     --bg-dark: #0F1F38;
     --bg-gray: #F0F2F3;
+
+    --bg-card: #FBFCFF;
+    --bg-dashboard: #EBF4F9;
+
+    --text-card-header: #1E3449;
+    --text-card-content: #707F8E;
 }
 
 /***** Color Styles *****/

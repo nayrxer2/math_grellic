@@ -6,7 +6,10 @@ import LandingPageCTA from './components/landingpage/LandingPageCTA'
 import LandingSectionFeatures from './components/landingpage/LandingSectionFeatures'
 import LandingPageFooter from './components/landingpage/LandingPageFooter'
 // dashboard
-import StudentDashboard from './components/dashboard/StudentDashboard'
+import StudentDashboard from './components/dashboard/studentdashboard/Dashboard'
+import StudentSideNav from './components/dashboard/studentdashboard/Sidenav'
+import TeacherDashboard from './components/dashboard/teacherdashboard/Dashboard'
+import TeacherSidenav from './components/dashboard/teacherdashboard/Sidenav'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/main.css'
 import 'bootstrap'
@@ -27,7 +30,20 @@ function App() {
           <LandingPageFooter />
         </div>
         </Route>
-        <Route exact path="/student" component={StudentDashboard} />
+        <Route exact path="/student">
+          <div className="row">
+          <input type="checkbox" id="nav-toggle"/>  
+            <StudentSideNav />
+            <StudentDashboard />
+          </div>
+        </Route>
+        <Route exact path="/teacher">
+        <div className="row">
+          <input type="checkbox" id="nav-toggle"/>  
+            <TeacherSidenav />
+            <TeacherDashboard />
+          </div>
+        </Route>
       </Switch>
     </Router>
   );
