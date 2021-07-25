@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 html {
     scroll-behavior: smooth;
-  }
+}
 body{
     font-family: "Manrope", sans-serif;
     width: 100%;
@@ -27,6 +27,12 @@ body{
     --bg-light: #FFF;
     --bg-dark: #0F1F38;
     --bg-gray: #F0F2F3;
+
+    --bg-card: #FBFCFF;
+    --bg-dashboard: #EBF4F9;
+
+    --text-card-header: #1E3449;
+    --text-card-content: #707F8E;
 }
 
 /***** Color Styles *****/
@@ -111,12 +117,15 @@ body{
     font-weight: normal;
     font-size: 1.125rem;
     line-height: 2rem;
+
 }
 
 .lead-2{
+    font-family: "Manrope", sans-serif;
     font-weight: 500;
     font-size: 	0.875rem;
     line-height: 1.5rem;
+    letter-spacing: 0.01em;
 }
 
 .body-1{
@@ -187,7 +196,7 @@ body{
     background-size: contain;
     background-position-x: right;
     /* width: 100%; */
-    max-height: 90vh;
+    max-height: 75vh;
 }
 .bg-cta {
     max-height: 90vh;
@@ -196,13 +205,6 @@ body{
     background: url('../images/cta-bg.png') no-repeat;
 }
 
-/* .cta-logo {
-    background-image: url('../images/CTA.png');
-    background-repeat: no-repeat !important;
-    background-size: cover;
-    height: 130vh;
-    margin-top: -1rem;
-} */
 .section-top {
     margin-top: -10rem;
 }

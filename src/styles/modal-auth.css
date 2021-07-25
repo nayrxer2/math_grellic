@@ -69,7 +69,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 90vh;
-    width: 55%;
+    width: 65%;
     overflow: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -95,7 +95,6 @@
 .bg-login {
     background-image: url('../images/login-bg.png');
     background-repeat: no-repeat;
-    background-size: 55% 85%;
     background-position-x: right;
     background-position-y: bottom;
     /* width: 100%; */
@@ -117,7 +116,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 90vh;
-    width: 55%;
+    width: 65%;
     overflow: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);

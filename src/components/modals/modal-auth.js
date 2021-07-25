@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import '../../styles/modal-auth.css'
 import imgTeacher from '../../images/teacher-img.png' 
 import imgStudent from '../../images/student-img.png'
-import bgLogin from '../../images/login-bg.png'
 import {Button} from '../Button'
 import logo from '../../images/logo-brand.png' 
 
@@ -43,7 +42,7 @@ const Modal = forwardRef((props, ref) => {
         setShowSignup(false)
       }
 
-      if (currentUser == "Teacher"){
+      if (currentUser === "Teacher"){
         setshowTeacherLogin(true)
         setShowStudentLogin(false)
       }else{
@@ -71,21 +70,21 @@ const Modal = forwardRef((props, ref) => {
                   {
                     showSelection ? 
                     <div className={"modal-selection-box"}>
-                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" buttonSize="large"><i class="bi bi-x"></i>Close</Button></div>
-                      <img className="brand-logo" src={logo}/>
+                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" buttonSize="large"><i className="bi bi-x"></i>Close</Button></div>
+                      <img className="brand-logo" src={logo} alt=""/>
                       <div id="selection-container" className="modal-auth-footer">
-                          <h1 className="h3-heading text-center selection-header">Which one are you?</h1>
-                          <p className="body-2 text-center mb-5">Select your role in the classroom to login</p>
+                          <h1 className="h3-heading text-center selection-header text-high">Which one are you?</h1>
+                          <p className="body-2 text-center mb-5 text-med">Select your role in the classroom to login</p>
 
-                          <div class="row justify-content-center text-center">
-                            <div onClick={() => selection("Teacher")} class="card-selection col-lg-3 col-md-12">
-                              <img className="img-fluid selection-img" src={imgTeacher}/>
-                              <h4 className="subheading-bold selection-label">Teacher</h4>
+                          <div className="row justify-content-center text-center">
+                            <div onClick={() => selection("Teacher")} className="card-selection col-lg-3 col-md-12">
+                              <img className="img-fluid selection-img" src={imgTeacher} alt=""/>
+                              <h4 className="subheading-bold selection-label txt-secondary">Teacher</h4>
                             </div>
                               
-                            <div onClick={() => selection("Student")} class="card-selection col-lg-3 col-md-12">
-                              <img className="img-fluid selection-img" src={imgStudent}/>
-                              <h4 className="subheading-bold selection-label">Student</h4>  
+                            <div onClick={() => selection("Student")} className="card-selection col-lg-3 col-md-12">
+                              <img className="img-fluid selection-img" src={imgStudent} alt=""/>
+                              <h4 className="subheading-bold selection-label txt-secondary">Student</h4>  
                             </div>  
                             </div>
                         </div>
@@ -98,33 +97,33 @@ const Modal = forwardRef((props, ref) => {
                   showLogin ?
                   <div className={"modal-login-box bg-login"}>
                     <div >
-                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" ><i class="bi bi-x"></i>Close</Button></div>
-                      <div><Button onClick={() => selection()} buttonStyle="tertiary" ><i class="bi bi-arrow-left-short"></i>BACK TO SELECTION</Button></div>                    
+                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" ><i className="bi bi-x"></i>Close</Button></div>
+                      <div><Button onClick={() => selection()} buttonStyle="tertiary" ><i className="bi bi-arrow-left-short"></i>BACK TO SELECTION</Button></div>                    
                       
                       <div id="login-container" className="modal-auth-footer">
                         <div className="login-user">
                           {
-                            showTeacherLogin ? <h1 className="h3-heading">Log in to <span className="login-user-label">Teacher</span> Portal</h1> : null
+                            showTeacherLogin ? <h1 className="h3-heading text-high">Log in to <span className="login-user-label">Teacher</span> Portal</h1> : null
                           }
                           {
-                            showStudentLogin ? <h1 className="h3-heading">Log in to <span className="login-user-label">Student</span> Portal</h1> : null
+                            showStudentLogin ? <h1 className="h3-heading text-high">Log in to <span className="login-user-label">Student</span> Portal</h1> : null
                           }
 
-                          <p className="body-2">Welcome! Please enter your registered email and password to continue.</p>
+                          <p className="body-2 text-med">Welcome! Please enter your registered email and password to continue.</p>
 
                           <form>
-                            <div class="mb-3">
-                              <label for="formGroupExampleInput" class="form-label label-med">Username</label>
-                              <input type="text" class="form-control col-md-4" id="formGroupExampleInput"/>
+                            <div className="mb-3">
+                              <label for="formGroupExampleInput" className="form-label label-med text-high">Username</label>
+                              <input type="text" className="form-control col-md-4" id="formGroupExampleInput"/>
                             </div>
-                            <div class="mb-3">
-                              <label for="formGroupExampleInput2" class="form-label label-med">Password</label>
-                              <input type="text" class="form-control col-md-4" id="formGroupExampleInput2"/>
+                            <div className="mb-3">
+                              <label for="formGroupExampleInput2" className="form-label label-med text-high">Password</label>
+                              <input type="text" className="form-control col-md-4" id="formGroupExampleInput2"/>
                             </div>
-                            <div class="mb-3">
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required/>
-                            <label class="form-check-label body-2" for="invalidCheck2">
+                            <div className="mb-3">
+                            <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="invalidCheck2" required/>
+                            <label className="form-check-label body-2 text-med" for="invalidCheck2">
                               Remember me
                             </label>
                             </div>
@@ -134,7 +133,7 @@ const Modal = forwardRef((props, ref) => {
                             </div>                       
                           </form>
                           {
-                            showTeacherLogin ? <p className="body-2">Don't have an account yet? <i onClick={() => signup()} className="label-med login-user-link">Sign Up</i></p> : null
+                            showTeacherLogin ? <p className="body-2 text-med">Don't have an account yet? <span onClick={() => signup()} className="label-med login-user-link">Sign Up</span></p> : null
                           }
                         </div>
                       </div>
@@ -147,52 +146,52 @@ const Modal = forwardRef((props, ref) => {
                   showSignup ?
                   <div className={"modal-signup-box bg-teacher-signup"}>
                     <div >
-                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" ><i class="bi bi-x"></i>Close</Button></div>
-                      <div><Button onClick={() => selection()} buttonStyle="tertiary" ><i class="bi bi-arrow-left-short"></i>BACK TO SELECTION</Button></div>                    
+                      <div className="modal-selection-close"><Button onClick={() => close()} buttonStyle="tertiary" ><i className="bi bi-x"></i>Close</Button></div>
+                      <div><Button onClick={() => selection()} buttonStyle="tertiary" ><i className="bi bi-arrow-left-short"></i>BACK TO SELECTION</Button></div>                    
                       
                       <div id="login-container" className="modal-auth-footer">
                         <div className="login-user">
-                          <h1 className="h3-heading">Sign Up</h1>
-                          <p className="body-2">Let's sign you up! Please fill in the fields to start.</p>
+                          <h1 className="h3-heading text-high">Sign Up</h1>
+                          <p className="body-2 text-med">Let's sign you up! Please fill in the fields to start.</p>
 
-                          <form class="row g-3">
-                          <div class="col-md-4">
-                            <label for="validationDefault01" class="form-label label-med">First name</label>
-                            <input type="text" class="form-control" id="validationDefault01" required/>
+                          <form className="row g-3">
+                          <div className="col-md-4">
+                            <label for="validationDefault01" className="form-label label-med text-high">First name</label>
+                            <input type="text" className="form-control" id="validationDefault01" required/>
                           </div>
-                          <div class="col-md-4">
-                            <label for="validationDefault02" class="form-label label-med">Last name</label>
-                            <input type="text" class="form-control" id="validationDefault02" required/>
+                          <div className="col-md-4">
+                            <label for="validationDefault02" className="form-label label-med text-high">Last name</label>
+                            <input type="text" className="form-control" id="validationDefault02" required/>
                           </div>
-                          <div class="col-md-4">
-                          <label for="validationDefault03" class="form-label label-med">Teacher's ID</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" id="validationDefault03"  aria-describedby="inputGroupPrepend2" required/>
+                          <div className="col-md-4">
+                          <label for="validationDefault03" className="form-label label-med text-high">Teacher's ID</label>
+                          <div className="input-group">
+                            <input type="text" className="form-control" id="validationDefault03"  aria-describedby="inputGroupPrepend2" required/>
                           </div>
                           </div>
-                          <div class="col-md-6 sign-up-form-spacing">
-                            <label for="validationDefaultUsername" class="form-label label-med">Username</label>
-                            <input type="text" class="form-control" id="validationDefaultUsername" required/>
+                          <div className="col-md-6 sign-up-form-spacing">
+                            <label for="validationDefaultUsername" className="form-label label-med text-high">Username</label>
+                            <input type="text" className="form-control" id="validationDefaultUsername" required/>
                           </div>
-                          <div class="col-md-6 sign-up-form-spacing">
-                            <label for="validationDefault05" class="form-label label-med">Email Address</label>
-                            <input type="text" class="form-control" id="validationDefault05" required/>
+                          <div className="col-md-6 sign-up-form-spacing">
+                            <label for="validationDefault05" className="form-label label-med text-high">Email Address</label>
+                            <input type="text" className="form-control" id="validationDefault05" required/>
                           </div>
-                          <div class="w-100"></div>
-                          <div class="col-md-6 sign-up-form-spacing">
-                            <label for="validationDefault03" class="form-label label-med">Password</label>
-                            <input type="text" class="form-control" id="validationDefault03" required/>
+                          <div className="w-100"></div>
+                          <div className="col-md-6 sign-up-form-spacing">
+                            <label for="validationDefault03" className="form-label label-med text-high">Password</label>
+                            <input type="text" className="form-control" id="validationDefault03" required/>
                           </div>
-                          <div class="col-md-6 sign-up-form-spacing">
-                            <label for="validationDefault05" class="form-label label-med">Confirm Password</label>
-                            <input type="text" class="form-control" id="validationDefault05" required/>
+                          <div className="col-md-6 sign-up-form-spacing">
+                            <label for="validationDefault05" className="form-label label-med text-high">Confirm Password</label>
+                            <input type="text" className="form-control" id="validationDefault05" required/>
                           </div>
                           <div className="auth-submit col-12">
                             <Button type="submit" buttonStyle="primary">SIGN UP</Button>  
                           </div>                       
                           </form>
                           {
-                            showTeacherLogin ? <p className="body-2">Already have an account? <i onClick={() => signup()} className="label-med login-user-link">Log In</i></p> : null
+                            showTeacherLogin ? <p className="body-2 text-med">Already have an account? <span onClick={() => signup()} className="label-med login-user-link">Log In</span></p> : null
                           }
                         </div>
                       </div>

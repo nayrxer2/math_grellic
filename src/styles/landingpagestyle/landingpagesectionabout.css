@@ -1,17 +1,12 @@
-#section-feature{
+#section-about{
     padding: 8% 10%;
 }
-
-
 .grid-item-box  {
     align-self: center !important;
     text-align: center !important; 
     box-shadow: 0px 5px 8px 5px  whitesmoke !important;
-    /* height: 300px; */
 }
-
 .icon-style{ 
-    /* display: block; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px;
@@ -19,11 +14,9 @@
     align-self: center;
     margin-bottom:1.5rem;
 }
-
 .card-container {
     margin-top: 0% !important;
 }
-
 .card-item{
     padding:2.5rem    ;
 }
