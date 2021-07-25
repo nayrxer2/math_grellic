@@ -111,12 +111,15 @@ body{
     font-weight: normal;
     font-size: 1.125rem;
     line-height: 2rem;
+
 }
 
 .lead-2{
+    font-family: "Manrope", sans-serif;
     font-weight: 500;
     font-size: 	0.875rem;
     line-height: 1.5rem;
+    letter-spacing: 0.01em;
 }
 
 .body-1{
